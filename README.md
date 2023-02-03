@@ -1,6 +1,6 @@
-- 👋 Hi, I’m EricPeng and now I am pusring a master's degree in digtal media technology at Hangzhou Dianzi University.
+- 👋 Hi, I’m Xiaogang Peng and now I am pursing a master's degree in digital media technology at Hangzhou Dianzi University.
 - 👀 I’m interested in game development and computer vision.
-- 🌱 I’m currently studying in action recognition, motion prediction and motion control in deep learning and reinforcement learning.
+- 🌱 I’m currently studying in computer vision and deep learning, including action recognition, motion prediction, video understanding.
 - 📫 If you have any questions, please contact me at pengxiaogang@hdu.edu.cn   
 
 <!---
