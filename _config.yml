@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xiaogang Peng(彭小刚)-Homepage"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+description              : "M.S. student in school of digital media and art. Focusing on computer vision and deep learning. "
 repository               : "xiaogangpeng.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Xiaogang Peng"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/pxg_far.png"
   bio              : "Hangzhou Dianzi University"
   location         : "Hangzhou, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "Lorem@ipsum.com"
+  email            : "pengxiaogang@hdu.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "https://github.com/xiaogangpeng"   # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
