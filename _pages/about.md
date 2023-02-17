@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently an incoming M.S. student at Hangzhou Dianzi University, where I am supervised by Prof. Zizhao Wu. Before that, I received the B.S. degree in the School of Media and Design from Hangzhou Dianzi University in 2020.
+I am currently an incoming M.S. student at Hangzhou Dianzi University（杭州电子科技大学）, where I am supervised by Prof. Zizhao Wu (吴子朝). Before that, I received the B.S. degree in the School of Media and Design from Hangzhou Dianzi University in 2020.
 
 My research interests includes: deep learning, computer vision, human motion prediction and video understanding.
 
