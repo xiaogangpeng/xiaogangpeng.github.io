@@ -41,7 +41,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 </div>
 </div>
 
-- [SoMoFormer: Social-Aware Motion Transformer for Multi-Person Motion Prediction](https://github.com), A, B, C, **CVPR 2020**
+- [SoMoFormer: Social-Aware Motion Transformer for Multi-Person Motion Prediction](https://github.com), <b>Xiaogang Peng</b>, Yaodi Shen, Haoran Wang, Binlin Nie, Yigang Wang, Zizhao Wu, **CVPR 2020**
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
