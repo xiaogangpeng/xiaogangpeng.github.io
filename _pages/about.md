@@ -48,8 +48,9 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 🎖 Honors and Awards
-- *2021.09 - now* Second-Class Academic Scholarship, Third-Class Academic Scholarship,
-- *2016.09 - 2020.06* First-Class Academic Scholarship, Third-Class Academic Scholarship, Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
+- *2021.09* Second-Class Academic Scholarship
+- *2019.09* First-Class Academic Scholarship
+- *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
 
 
 # 📖 Educations
