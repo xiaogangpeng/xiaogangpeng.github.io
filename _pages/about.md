@@ -44,11 +44,11 @@ My research interests includes: deep learning, computer vision, human motion pre
 - ``Under Review`` [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://arxiv.org/abs/2202.13277), **Xiaogang Peng**, Siyuan Mao, Zizhao Wu  [**Project**](https://portaspeech.github.io/) \| [![](https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars)](https://github.com/MoonInTheRiver/NeuralSVB)
 - ``Arxiv 2022`` [Lightweight Multi-Scale Convolutional Transformer for Weakly Supervised Video Anomaly Detection](https://github.com), **Xiaogang Peng**, Siyuan Mao, Jianglei Ye, Zizhao Wu \|
 - ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding](https://github.com), Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng \|
-- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition](https://github.com), iawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  \|
+- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition](https://github.com), Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  \|
 
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2016.09 - 2020.06* Third-Class Academic Scholarship, First-Class Academic Scholarship, Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
