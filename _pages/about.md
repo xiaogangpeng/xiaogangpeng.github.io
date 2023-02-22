@@ -48,12 +48,13 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 🎖 Honors and Awards
-- *2016.09 - 2020.06* Third-Class Academic Scholarship, First-Class Academic Scholarship, Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09 - now* Second-Class Academic Scholarship, Third-Class Academic Scholarship,
+- *2016.09 - 2020.06* First-Class Academic Scholarship, Third-Class Academic Scholarship, Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
+
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09 - 2023.04 (now)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
+- *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
