@@ -41,7 +41,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 </div>
 
 - ``Arxiv 2022`` [SoMoFormer: Social-Aware Motion Transformer for Multi-Person Motion Prediction](https://github.com), **Xiaogang Peng**, Yaodi Shen, Haoran Wang, Binlin Nie, Yigang Wang, Zizhao Wu \|  
-- ``Under Review`` [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://arxiv.org/abs/2202.13277), **Xiaogang Peng**, Siyuan Mao, Zizhao Wu  [**Project**](https://portaspeech.github.io/) \| [![](https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars)](https://github.com/MoonInTheRiver/NeuralSVB)
+
+[//]: # (- ``Under Review`` [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting]&#40;https://arxiv.org/abs/2202.13277&#41;, **Xiaogang Peng**, Siyuan Mao, Zizhao Wu  [**Project**]&#40;https://portaspeech.github.io/&#41; \| [![]&#40;https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars&#41;]&#40;https://github.com/MoonInTheRiver/NeuralSVB&#41;)
 - ``Arxiv 2022`` [Lightweight Multi-Scale Convolutional Transformer for Weakly Supervised Video Anomaly Detection](https://github.com), **Xiaogang Peng**, Siyuan Mao, Jianglei Ye, Zizhao Wu \|
 - ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding](https://github.com), Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng \|
 - ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition](https://github.com), Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  \|
