@@ -32,7 +32,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://arxiv.org/pdf/2303.05095.pdf)
 
 **Xiaogang Peng**, Siyuan Mao, Zizhao Wu
 
