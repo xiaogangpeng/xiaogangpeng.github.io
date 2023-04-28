@@ -50,7 +50,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 🎖 Honors and Awards
-- *2021.09* Second-Class Academic Scholarship
+- *2022.09* Second-Class Graduate Academic Scholarship
+- *2021.09* Second-Class Graduate Entrance Scholarship
 - *2019.09* First-Class Academic Scholarship
 - *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
 
@@ -66,4 +67,4 @@ My research interests includes: deep learning, computer vision, human motion pre
 [//]: # (- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]]&#40;https://github.com/&#41;)
 
 # 💻 Internships
-- *2023.03 - Present*, [Phigent Robitcs](https://github.com/), China.
+- *2023.03 - Present*, [Phigent Robotics](https://www.phigent.ai/home), China.
