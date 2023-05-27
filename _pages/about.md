@@ -58,7 +58,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 📖 Educations
-- *2021.09 - present*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
+- *2021.09 - 2024.06 (expected)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
 - *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
 
 [//]: # (# 💬 Invited Talks)
