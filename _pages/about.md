@@ -41,8 +41,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 </div>
 </div>
 
-- ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes**](https://mi-motion.github.io)
-- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng**, **Hao Wen**, **Yikai Luo**, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu
+- ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn)
+- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng**, **Hao Wen**, **Yikai Luo**, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD)
 
 [//]: # (- ``Under Review`` [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting]&#40;https://arxiv.org/abs/2202.13277&#41;, **Xiaogang Peng**, Siyuan Mao, Zizhao Wu  [**Project**]&#40;https://portaspeech.github.io/&#41; \| [![]&#40;https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars&#41;]&#40;https://github.com/MoonInTheRiver/NeuralSVB&#41;)
 [//]: # (- ``Arxiv 2022`` [Lightweight Multi-Scale Convolutional Transformer for Weakly Supervised Video Anomaly Detection]&#40;https://github.com&#41;, **Xiaogang Peng**, Siyuan Mao, Jianglei Ye, Zizhao Wu \|)
@@ -69,7 +69,4 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 # 💻 Internships
 
-<div>
-<div class='paper-box-image'><div><img src='images/favicon-32x32.png' alt="sym" width="10%"></div></div>
 - *2023.03 - Present*, [Phigent Robotics](https://www.phigent.ai/home), China.
-<div>
