@@ -51,14 +51,14 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 🎖 Honors and Awards
-- *2022.09* Second-Class Graduate Academic Scholarship
-- *2021.09* Second-Class Graduate Entrance Scholarship
-- *2019.09* First-Class Academic Scholarship
+- *2022.09* Second-Class Graduate Academic Scholarship of Hangzhou Dianzi University
+- *2021.09* Master Freshman Merit Scholarship of Hangzhou Dianzi University
+- *2019.09* First-Class Academic Scholarship of Hangzhou Dianzi University
 - *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
 
 
 # 📖 Educations
-- *2021.09 - 2023.04 (now)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
+- *2021.09 - present*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
 - *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
 
 [//]: # (# 💬 Invited Talks)
@@ -68,4 +68,6 @@ My research interests includes: deep learning, computer vision, human motion pre
 [//]: # (- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]]&#40;https://github.com/&#41;)
 
 # 💻 Internships
+
+<div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 - *2023.03 - Present*, [Phigent Robotics](https://www.phigent.ai/home), China.
