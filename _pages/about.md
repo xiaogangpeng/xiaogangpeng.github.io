@@ -69,5 +69,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 # 💻 Internships
 
-<div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
+<div>
+<div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/favicon-32x32.png' alt="sym" width="100%"></div></div>
 - *2023.03 - Present*, [Phigent Robotics](https://www.phigent.ai/home), China.
+<div>
