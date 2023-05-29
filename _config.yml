@@ -37,7 +37,8 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "xiaogangpeng"   # e.g., "github username"
+  github           : [metadata]
+  # github           : "xiaogangpeng"   # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
@@ -96,6 +97,7 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 
 
 # Conversion
