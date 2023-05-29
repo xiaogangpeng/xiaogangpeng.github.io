@@ -64,7 +64,7 @@ include:
   - .htaccess
   - _pages
   - files
-  - projects
+  - _projects
 exclude:
   - docs
   - google_scholar_crawler
