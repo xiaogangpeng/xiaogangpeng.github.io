@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Xiaogang Peng (彭小刚)-Homepage"
 description              : "M.S. student in school of digital media and art. Focusing on computer vision and deep learning. "
-repository               : "xiaogangpeng.github.io"
+repository               : "xiaogangpeng/xiaogangpeng.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
