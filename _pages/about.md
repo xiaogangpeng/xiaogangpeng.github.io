@@ -36,26 +36,29 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 **Xiaogang Peng**, Siyuan Mao, Zizhao Wu
 
-[**Code** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \|[**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
+[**Code** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
 </div>
 </div>
 
 - ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn)
-- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng***, Hao Wen*, Yikai Luo*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD)
+- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng***, Hao Wen*, Yikai Luo*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD) \| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-weakly-supervised-audio-visual/anomaly-detection-in-surveillance-videos-on-2)](https://paperswithcode.com/sota/anomaly-detection-in-surveillance-videos-on-2?p=learning-weakly-supervised-audio-visual) 
 
-[//]: # (- ``Under Review`` [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting]&#40;https://arxiv.org/abs/2202.13277&#41;, **Xiaogang Peng**, Siyuan Mao, Zizhao Wu  [**Project**]&#40;https://portaspeech.github.io/&#41; \| [![]&#40;https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars&#41;]&#40;https://github.com/MoonInTheRiver/NeuralSVB&#41;)
-[//]: # (- ``Arxiv 2022`` [Lightweight Multi-Scale Convolutional Transformer for Weakly Supervised Video Anomaly Detection]&#40;https://github.com&#41;, **Xiaogang Peng**, Siyuan Mao, Jianglei Ye, Zizhao Wu \|)
-[//]: # (- ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding]&#40;https://github.com&#41;, Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng \|)
-[//]: # (- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition]&#40;https://github.com&#41;, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  \|)
+
+
+
+- ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding]&#40;https://github.com&#41;, Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng \|
+- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition]&#40;https://github.com&#41;, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  \|
 
 
 # 🎖 Honors and Awards
-- *2022.09* Second-Class Graduate Academic Scholarship of Hangzhou Dianzi University
+- *2022.09* Third-Class Graduate Academic Scholarship of Hangzhou Dianzi University
 - *2021.09* Master Freshman Merit Scholarship of Hangzhou Dianzi University
+- *2020.06* Outstanding Undergraduate Thesis of Hangzhou Dianzi University
 - *2019.09* First-Class Academic Scholarship of Hangzhou Dianzi University
 - *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
+- *2018.05* Third-Class Academic Scholarship of Hangzhou Dianzi University
 
 
 # 📖 Educations
