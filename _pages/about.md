@@ -72,5 +72,5 @@ My research interests includes: deep learning, computer vision, human motion pre
 [//]: # (- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]]&#40;https://github.com/&#41;)
 
 # 💻 Internships
-
-- *2023.03 - Present*, [Phigent Robotics](https://www.phigent.ai/home), China.
+- I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
+- *2023.03 - 2023.07 (expected)*, [Phigent Robotics](https://www.phigent.ai/home), China.
