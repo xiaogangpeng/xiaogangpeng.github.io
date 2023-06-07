@@ -27,7 +27,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 - *2023.01*: &nbsp;🎉🎉 The new homepage is built and updated. 
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
-# 📝 Publications 
+# 📝 Publications
+<div> <text>indicates equal contribution </text> </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
