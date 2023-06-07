@@ -28,7 +28,9 @@ My research interests includes: deep learning, computer vision, human motion pre
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications
-<div> <text>indicates equal contribution </text> </div>
+
+\* indicates equal contribution 
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -44,7 +46,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 </div>
 
 - ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn)
-- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng***, Hao Wen*, Yikai Luo*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD)
+- ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng\***, Hao Wen*, Yikai Luo*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD)
 
 
 
