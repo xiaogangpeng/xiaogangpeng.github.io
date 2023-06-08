@@ -51,8 +51,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 
-- ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding]&#40;https://github.com&#41;, Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng
-- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition]&#40;https://github.com&#41;, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu 
+- ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding], Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng
+- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition], Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu 
 
 
 # 🎖 Honors and Awards
