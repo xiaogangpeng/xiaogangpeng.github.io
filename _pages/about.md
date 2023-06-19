@@ -91,12 +91,12 @@ My research interests includes: deep learning, computer vision, human motion pre
 </div>
 
 
-<div class='exp-box'> <div class='exp-box-image'><div><img src='images/phigent_logo' alt="sym" width="100%"></div></div>
+<div class='exp-box'> <div class='exp-box-image'><div><img src='images/phigent_logo.png' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
 
-[Phigent Robotics](https://www.phigent.ai/home), remote
+[Phigent Robotics](https://www.phigent.ai/home), China
 
-**Research Intern** @ Algorithm Research Department, China
+**Research Intern** @ Algorithm Research Department
 
 *2023.03 - 2023.06*
 
