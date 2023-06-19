@@ -78,7 +78,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 # 💻 Internships
 
-<div class='exp-box'> <div class='exp-box-image'><div><img src='images/neu_log.png' alt="sym" width="100%"></div></div>
+<div class='exp-box'> <div class='exp-box-image'><div><img src='images/neu_logo.png' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
 
 [Northeastern University](https://www.northeastern.edu/), USA
