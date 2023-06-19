@@ -78,27 +78,29 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 # 💻 Internships
 
-<div class='exp-box'> <div class='exp-box-image'><div><img src='https://currentschoolnews.com/us/wp-content/uploads/2022/08/northun.png' alt="sym" width="100%"></div></div>
+<div class='exp-box'> <div class='exp-box-image'><div><img src='images/neu_log.png' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
 
-[Northeastern University](https://www.northeastern.edu/), remote
+[Northeastern University](https://www.northeastern.edu/), USA
 
 **Research Intern** @ Computer Vision Lab
 
 *2023.06 - now*
+
 </div>
 </div>
 
 
-<div class='exp-box'> <div class='exp-box-image'><div><img src='https://zhengxin-pub.cdn.bcebos.com/logopic/bd5e7b38909b034ed9e9ef78efdf0ee5_fullsize.jpg?x-bce-process=image/resize,m_lfit,w_200' alt="sym" width="100%"></div></div>
+<div class='exp-box'> <div class='exp-box-image'><div><img src='images/phigent_logo' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
 
-[Northeastern University](https://www.northeastern.edu/), remote
+[Phigent Robotics](https://www.phigent.ai/home), remote
 
-**Research Intern** @ Algorithm Research Department
+**Research Intern** @ Algorithm Research Department, China
 
 *2023.03 - 2023.06*
+
 </div>
 </div>
 
-- *2023.03 - 2023.06*, [Phigent Robotics](https://www.phigent.ai/home), China.
+
