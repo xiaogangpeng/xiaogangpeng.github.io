@@ -24,7 +24,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 <a href="backup/indexl.html">[中文主页]</a>
 
 # 🔥 News
-- *2023.01*: &nbsp;🎉🎉 The new homepage is built and updated. 
+
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications
