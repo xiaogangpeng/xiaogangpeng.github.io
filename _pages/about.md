@@ -24,7 +24,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 <a href="backup/indexl.html">[中文主页]</a>
 
 # 🔥 News
-
+- I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications
@@ -42,6 +42,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
+- A trajecotry-aware relative position encoding is proposed to provice more discriminative spatial information and additional interactive clues.
 </div>
 </div>
 
@@ -51,8 +52,8 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 
-- ``Arxiv 2022`` [PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding], Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng
-- ``Arxiv 2022`` [More Comprehensive Facial Inversion for More Effective Expression Recognition], Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu 
+- ``Arxiv 2022`` PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding, Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng
+- ``Arxiv 2022`` More Comprehensive Facial Inversion for More Effective Expression Recognition, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu 
 
 
 # 🎖 Honors and Awards
@@ -76,5 +77,28 @@ My research interests includes: deep learning, computer vision, human motion pre
 [//]: # (- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]]&#40;https://github.com/&#41;)
 
 # 💻 Internships
-- I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
-- *2023.03 - 2023.07 (expected)*, [Phigent Robotics](https://www.phigent.ai/home), China.
+
+<div class='exp-box'> <div class='exp-box-image'><div><img src='https://currentschoolnews.com/us/wp-content/uploads/2022/08/northun.png' alt="sym" width="100%"></div></div>
+<div class='exp-box-text' markdown="1">
+
+[Northeastern University](https://www.northeastern.edu/), remote
+
+**Research Intern** @ Computer Vision Lab
+
+*2023.06 - now*
+</div>
+</div>
+
+
+<div class='exp-box'> <div class='exp-box-image'><div><img src='https://zhengxin-pub.cdn.bcebos.com/logopic/bd5e7b38909b034ed9e9ef78efdf0ee5_fullsize.jpg?x-bce-process=image/resize,m_lfit,w_200' alt="sym" width="100%"></div></div>
+<div class='exp-box-text' markdown="1">
+
+[Northeastern University](https://www.northeastern.edu/), remote
+
+**Research Intern** @ Algorithm Research Department
+
+*2023.03 - 2023.06*
+</div>
+</div>
+
+- *2023.03 - 2023.06*, [Phigent Robotics](https://www.phigent.ai/home), China.
