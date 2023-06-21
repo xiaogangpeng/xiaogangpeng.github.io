@@ -57,7 +57,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 # 🎖 Honors and Awards
-- *2023.06* Excellent Master's Thesis Cultivation Program (top 5%)
+- *2023.06* Excellent Master's Thesis Cultivation Program (top 2%)
 - *2022.09* Third-Class Graduate Academic Scholarship of Hangzhou Dianzi University
 - *2021.09* Master Freshman Merit Scholarship of Hangzhou Dianzi University
 - *2020.06* Outstanding Undergraduate Thesis of Hangzhou Dianzi University
