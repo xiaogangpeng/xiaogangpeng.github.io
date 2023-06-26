@@ -42,7 +42,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
-- A trajecotry-aware relative position encoding is proposed to provice more discriminative spatial information and additional interactive clues.
+- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
 </div>
 </div>
 
