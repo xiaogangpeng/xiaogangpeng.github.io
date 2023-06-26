@@ -27,10 +27,10 @@ My research interests includes: deep learning, computer vision, human motion pre
 - I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
-# 📝 Publications
-
-\* indicates equal contribution 
-
+# 📝 Publications 
+```python 
+* indicates equal contribution 
+```
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -81,7 +81,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 <div class='exp-box'> <div class='exp-box-image'><div><img src='images/neu_logo.png' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
 
-[Northeastern University](https://www.northeastern.edu/), USA
+[Northeastern University](https://www.northeastern.edu/), US
 
 **Research Intern** @ Computer Vision Lab
 
