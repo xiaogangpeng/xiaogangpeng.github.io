@@ -83,7 +83,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 [Northeastern University](https://www.northeastern.edu/), US
 
-**Research Intern** @ Computer Vision Lab
+**Research Intern** @ Visual Intelligence Lab
 
 *2023.06 - now*
 
