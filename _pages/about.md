@@ -32,6 +32,24 @@ My research interests includes: deep learning, computer vision, human motion pre
 * indicates equal contribution 
 ```
 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><video src='images/HOI-Diff.mp4' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
+
+**Xiaogang Peng***, Yiming Xie*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang
+\| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
+<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
+- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
+</div>
+</div>
+
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -45,6 +63,9 @@ My research interests includes: deep learning, computer vision, human motion pre
 - A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
 </div>
 </div>
+
+
+
 
 - ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Hao Wen, Ding Yu, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn) \| [**Paper**](https://arxiv.org/pdf/2306.13566.pdf)
 - ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng\***, Hao Wen\*, Yikai Luo\*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD) \| [**Paper**](https://arxiv.org/pdf/2305.18797.pdf)
