@@ -34,7 +34,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><video src='images/HOI-Diff.mp4' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><video src='images/HOI-Diff.mp4' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
@@ -45,7 +45,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 - Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
 - A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
 </div>
-</div>
+</div> -->
 
 
 
