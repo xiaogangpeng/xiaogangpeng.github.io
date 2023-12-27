@@ -49,6 +49,24 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://openaccess.thecvf.com/content/CVPR2023/papers/Peng_Trajectory-Aware_Body_Interaction_Transformer_for_Multi-Person_Pose_Forecasting_CVPR_2023_paper.pdf)
+
+**Xiaogang Peng**, Siyuan Mao, Zizhao Wu
+
+[**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
+<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
+- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
+</div>
+</div>
+
+
+
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
