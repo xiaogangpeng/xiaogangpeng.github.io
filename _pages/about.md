@@ -54,7 +54,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 [HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
 
-**Xiaogang Peng***, Yiming Xie*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang \| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
+**Xiaogang Peng\***, Yiming Xie\*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang \| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - xx
 </div>
