@@ -48,17 +48,19 @@
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
+    width: 100%;
     
 
     .paper-box-image{
         justify-content: center;
         display: flex;
-        width: 100%;
+        // width: 100%;
         order: 2;
         img {
-            max-width: 400px;
+            max-width: 250px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
+            overflow:hidden;
         }
     }
     
@@ -70,8 +72,8 @@
     @include breakpoint($medium) {
         .paper-box-image{
             justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
+            min-width: 100px;
+            max-width: 20%;
             order: 1;
         }
         

@@ -21,16 +21,16 @@ I am currently an incoming M.S. student at Hangzhou Dianzi University（杭州�
 
 My research interests includes: deep learning, computer vision, human motion prediction and video understanding.
 
-<a href="backup/indexl.html">[中文主页]</a>
+<!-- <a href="backup/indexl.html">[中文主页]</a> -->
 
 # 🔥 News
 - I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications 
-```python 
-* indicates equal contribution 
-```
+
+(* indicates equal contribution)
+
 
 
 
@@ -49,15 +49,14 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/HOI-Diff.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
 
 **Xiaogang Peng***, Yiming Xie*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang \| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
-- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
+- xx
 </div>
 </div>
 
@@ -71,9 +70,7 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://openaccess.thecvf.com/content/CVPR2023/papers/Peng_Trajectory-Aware_Body_Interaction_Transformer_for_Multi-Person_Pose_Forecasting_CVPR_2023_paper.pdf)
 
-**Xiaogang Peng**, Siyuan Mao, Zizhao Wu
-
-[**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
+**Xiaogang Peng**, Siyuan Mao, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
 <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
 - A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
