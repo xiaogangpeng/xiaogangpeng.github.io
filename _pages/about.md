@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently an incoming M.S. student at Hangzhou Dianzi University（杭州电子科技大学）, where I am supervised by Associate Prof. Zizhao Wu (吴子朝). Before that, I received the B.S. degree in the School of Media and Design from Hangzhou Dianzi University in 2020.
+I am currently an third-year M.S. student at Hangzhou Dianzi University, where I am supervised by Associate Prof. Zizhao Wu. Before that, I received the B.S. degree from Hangzhou Dianzi University in 2020.
 
-My research interests includes: deep learning, computer vision, human motion prediction and video understanding.
+My research interests includes: deep learning, 3D computer vision, human motion modeling and human behaviour understanding.
 
 <!-- <a href="backup/indexl.html">[中文主页]</a> -->
 
@@ -29,23 +29,10 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 # 📝 Publications 
 
-(* indicates equal contribution)
 
 
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><video src='images/HOI-Diff.mp4' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
-
-**Xiaogang Peng***, Yiming Xie*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang
-\| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
-- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
-</div>
-</div> -->
 
 
 
@@ -54,9 +41,13 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 [HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
 
-**Xiaogang Peng\***, Yiming Xie\*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang \| [**Codes** ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social)](https://github.com/neu-vi/HOI-Diff) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- xx
+**Xiaogang Peng\***, Yiming Xie\*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang 
+
+(* indicates equal contribution)
+
+
+[**Codes**](https://github.com/neu-vi/HOI-Diff) ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
+
 </div>
 </div>
 
@@ -70,34 +61,32 @@ My research interests includes: deep learning, computer vision, human motion pre
 
 [Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://openaccess.thecvf.com/content/CVPR2023/papers/Peng_Trajectory-Aware_Body_Interaction_Transformer_for_Multi-Person_Pose_Forecasting_CVPR_2023_paper.pdf)
 
-**Xiaogang Peng**, Siyuan Mao, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social)](https://github.com/xiaogangpeng/tbiformer) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Effectively modeling body parts interactions for the task of multi-person pose forecasting. 
-- A trajecotry-aware relative position encoding is proposed to offer more discriminative spatial information and additional interactive clues.
+**Xiaogang Peng**, Siyuan Mao, Zizhao Wu 
+
+[**Codes**](https://github.com/xiaogangpeng/tbiformer) ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
 </div>
 </div>
 
 
 
 
-- ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Hao Wen, Ding Yu, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn) \| [**Paper**](https://arxiv.org/pdf/2306.13566.pdf)
+<!-- - ``Under Review`` [The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction](https://github.com),  **Xiaogang Peng**, Xiao Zhou, Yikai Luo, Hao Wen, Ding Yu, Zizhao Wu \| [**Project**](https://mi-motion.github.io) \| [**Baseline Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/socialtgcn?style=social)](https://github.com/xiaogangpeng/socialtgcn) \| [**Paper**](https://arxiv.org/pdf/2306.13566.pdf)
 - ``Under Review`` [Learning Weakly-Supervised Audio-Visual Violence Detection in Hyperbolic Space](https://github.com),  **Xiaogang Peng\***, Hao Wen\*, Yikai Luo\*, Xiao Zhou, Keyang Yu, Yigang Wang, Zizhao Wu \| [**Codes** ![](https://img.shields.io/github/stars/xiaogangpeng/HyperVD?style=social)](https://github.com/xiaogangpeng/HyperVD) \| [**Paper**](https://arxiv.org/pdf/2305.18797.pdf)
 
 
 
-
 - ``Arxiv 2022`` PointCMC: Cross-Modal Multi-Scale Correspondences Learning for Point Cloud Understanding, Honggu Zhou, **Xiaogang Peng**, Jiawei Mao, Zizhao Wu, Ming Zeng
-- ``Arxiv 2022`` More Comprehensive Facial Inversion for More Effective Expression Recognition, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu 
+- ``Arxiv 2022`` More Comprehensive Facial Inversion for More Effective Expression Recognition, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  -->
 
 
-# 🎖 Honors and Awards
+<!-- # 🎖 Honors and Awards
 - *2023.06* Excellent Master's Thesis Cultivation Program (top 2%)
 - *2022.09* Second-Class Graduate Academic Scholarship of Hangzhou Dianzi University
 - *2021.09* Master Freshman Merit Scholarship of Hangzhou Dianzi University
 - *2020.06* Outstanding Undergraduate Thesis of Hangzhou Dianzi University
 - *2019.09* First-Class Academic Scholarship of Hangzhou Dianzi University
 - *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
-- *2018.05* Third-Class Academic Scholarship of Hangzhou Dianzi University
+- *2018.05* Third-Class Academic Scholarship of Hangzhou Dianzi University -->
 
 
 # 📖 Educations
