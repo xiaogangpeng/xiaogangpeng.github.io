@@ -17,6 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+# 👤 About Me 
 I am currently an third-year M.S. student at Hangzhou Dianzi University, where I am supervised by Associate Prof. Zizhao Wu. Before that, I received the B.S. degree from Hangzhou Dianzi University in 2020.
 
 My research interests includes: deep learning, 3D computer vision, human motion modeling and human behaviour understanding.
@@ -28,10 +29,6 @@ My research interests includes: deep learning, 3D computer vision, human motion 
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications 
-
-
-
-
 
 
 
