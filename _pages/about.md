@@ -24,7 +24,7 @@ My research interests includes: deep learning, 3D computer vision, human motion 
 <!-- <a href="backup/indexl.html">[中文主页]</a> -->
 
 # 🔥 News
-- I will be joining in [Dr. Huaizu Jiang](https://jianghz.me/)'s Computer Vision Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023.
+<!-- - I will be joining in [Prof. Huaizu Jiang](https://jianghz.me/)'s Visual Intelligence Lab of [Northeastern University](https://www.northeastern.edu/) as a research intern in June 2023. -->
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications 
