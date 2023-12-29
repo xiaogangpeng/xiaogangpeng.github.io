@@ -87,16 +87,10 @@ My research interests includes: deep learning, 3D computer vision, human motion 
 
 
 # 📖 Educations
-- *2021.09 - 2024.06 (expected)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
-- *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang. 
+- *2021.09 - 2024.06 (expected)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China
+- *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China. 
 
-[//]: # (# 💬 Invited Talks)
-
-[//]: # (- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. )
-
-[//]: # (- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]]&#40;https://github.com/&#41;)
-
-# 💻 Internships
+# 💻 Research Experience
 
 <div class='exp-box'> <div class='exp-box-image'><div><img src='images/neu_logo.png' alt="sym" width="100%"></div></div>
 <div class='exp-box-text' markdown="1">
@@ -122,5 +116,12 @@ My research interests includes: deep learning, 3D computer vision, human motion 
 
 </div>
 </div>
+
+
+# 💬 Academic Service
+
+- *Reviewer*, CVPR 2024, ACM MM 2023
+
+
 
 
