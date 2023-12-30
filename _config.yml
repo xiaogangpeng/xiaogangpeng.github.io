@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xiaogang Peng (彭小刚)-Homepage"
+title                    : "Xiaogang Peng"
 description              : "M.S. student in Digital Media Technology. Focusing on deep learning and 3D computer vision. "
 repository               : "xiaogangpeng.github.io"
 google_scholar_stats_use_cdn : true
