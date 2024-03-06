@@ -18,7 +18,8 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 👤 About Me 
-I am currently an third-year M.S. student at Hangzhou Dianzi University, where I am supervised by Associate Prof. Zizhao Wu. Before that, I received the B.S. degree from Hangzhou Dianzi University in 2020.
+
+I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@ [Notheastern Univeristy](). My primary research interests include computer vision and deep learning, mainly focusing on reversible imaging problems and image generation. I am honored to have been mentored and collaborated with Professor [Zizhao Wu](http://zizhao.me/) during my undergraduate and master's studies at Hangzhou Dianzi University.
 
 My research interests includes: deep learning, 3D computer vision, human motion modeling and human behaviour understanding.
 
