@@ -19,7 +19,7 @@ redirect_from:
 
 # 👤 About Me 
 
-I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/). My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation. I am honored to have been supervised and collaborated with Professor [Zizhao Wu](http://zizhao.me/) during my undergraduate and master's studies at Hangzhou Dianzi University.
+I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/). My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation. I am honored to have been supervised and collaborated with Associate Professor [Zizhao Wu](http://zizhao.me/) during my undergraduate and master's studies at Hangzhou Dianzi University.
 
 
 <!-- <a href="backup/indexl.html">[中文主页]</a> -->
