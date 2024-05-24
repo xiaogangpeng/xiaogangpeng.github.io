@@ -19,7 +19,7 @@ redirect_from:
 
 # 👤 About Me 
 
-I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/) supervised by [Prof. Huaizu Jiang](https://jianghz.me/). Before that, I recieved my Bachelor's and Master's degrees from Hangzhou Dianzi University. My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation.
+I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/) supervised by [Prof. Huaizu Jiang](https://jianghz.me/). Before that, I recieved my Bachelor's and Master's degrees from [Hangzhou Dianzi University](https://iimc.hdu.edu.cn/index). My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation.
 
 
 # 🔥 News
