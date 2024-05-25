@@ -118,9 +118,9 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 
 # 💬 Academic Service
 
-- *Conference Reviewer*, NeurIPS 2024, ACM MM 2024, CVPR 2024, NeurIPS DB 2023, ACM MM 2023, 
+- *Conference Reviewer:* NeurIPS 2024, ACM MM 2024, CVPR 2024, NeurIPS DB 2023, ACM MM 2023, 
 
-- *Journal Reviewer*,  Neurocomputing
+- *Journal Reviewer:*  Neurocomputing
 
 
 
