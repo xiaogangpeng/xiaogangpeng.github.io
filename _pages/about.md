@@ -85,7 +85,7 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 
 
 # 📖 Educations
-- *2021.09 - 2024.06 (expected)*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China
+- *2021.09 - 2024.06*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China
 - *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China. 
 
 # 💻 Research Experience
