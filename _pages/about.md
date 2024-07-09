@@ -77,8 +77,8 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 
 # 📖 Educations
 - *2024.08 - present*, Ph.D, Northeastern University :us:, Boston, USA
-- *2021.09 - 2024.06*, Master, Hangzhou Dianzi University :cn:, Hangzhou, China
-- *2016.09 - 2020.06*, Undergraduate, Hangzhou Dianzi University :cn:, Hangzhou, China. 
+- *2021.09 - 2024.06*, M.Sc, Hangzhou Dianzi University :cn:, Hangzhou, China
+- *2016.09 - 2020.06*, B.Sc, Hangzhou Dianzi University :cn:, Hangzhou, China. 
 
 # 💻 Research Experience
 
