@@ -74,15 +74,6 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 - ``Arxiv 2022`` More Comprehensive Facial Inversion for More Effective Expression Recognition, Jiawei Mao, Guangyi Zhao, Yuanqi Chang, Xuesong Yin, **Xiaogang Peng**, Rui Xu  -->
 
 
-<!-- # 🎖 Honors and Awards
-- *2023.06* Excellent Master's Thesis Cultivation Program (top 2%)
-- *2022.09* Second-Class Graduate Academic Scholarship of Hangzhou Dianzi University
-- *2021.09* Master Freshman Merit Scholarship of Hangzhou Dianzi University
-- *2020.06* Outstanding Undergraduate Thesis of Hangzhou Dianzi University
-- *2019.09* First-Class Academic Scholarship of Hangzhou Dianzi University
-- *2019.05* Second-Award of Service Outsourcing Innovation and Entrepreneurship Competition for Chinese College Students.
-- *2018.05* Third-Class Academic Scholarship of Hangzhou Dianzi University -->
-
 
 # 📖 Educations
 - *2021.09 - 2024.06*, Master, Hangzhou Dianzi University (HDU), Hangzhou, Zhejiang, China
@@ -121,6 +112,16 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 - *Conference Reviewer:* NeurIPS 2024, ACM MM 2024, CVPR 2024, ACM MM 2023, 
 
 - *Journal Reviewer:*  Neurocomputing
+
+
+
+# 🎖 Honors and Awards
+- *2024.05* Merit Graduated Student of Hangzhou Dianzi University 
+- *2023.09* First-Class Academic Scholarship of Hangzhou Dianzi University
+- *2023.06* Excellent Master's Thesis Cultivation Program (top 2%)
+- *2020.06* Outstanding Undergraduate Thesis of Hangzhou Dianzi University
+- *2019.09* First-Class Academic Scholarship of Hangzhou Dianzi University
+
 
 
 
