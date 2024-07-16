@@ -34,7 +34,7 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/HOI-Diff_teaser.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models](https://arxiv.org/abs/2312.06553)
+HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models
 
 **Xiaogang Peng\***, Yiming Xie\*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang 
 
@@ -42,6 +42,8 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 
 
 [**Codes**](https://github.com/neu-vi/HOI-Diff) ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Code-fedcba?style=flat&logo=github)](https://github.com/neu-vi/HOI-Diff)![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social) [![Website](https://img.shields.io/badge/Website-Demo-badcfe?style=flat)](https://neu-vi.github.io/HOI-Diff/) [![arXiv](https://img.shields.io/badge/arXiv-2403.07487-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/2312.06553)
 
 </div>
 </div>
@@ -54,11 +56,12 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/TBIFormer_500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting](https://openaccess.thecvf.com/content/CVPR2023/papers/Peng_Trajectory-Aware_Body_Interaction_Transformer_for_Multi-Person_Pose_Forecasting_CVPR_2023_paper.pdf)
+Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting
 
 **Xiaogang Peng**, Siyuan Mao, Zizhao Wu 
 
-[**Codes**](https://github.com/xiaogangpeng/tbiformer) ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)
+<!-- [**Codes**](https://github.com/xiaogangpeng/tbiformer) ![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social) \| [**Project Page**](https://xiaogangpeng.github.io/projects/tbiformer/page.html)  -->
+[![GitHub](https://img.shields.io/badge/GitHub-Code-fedcba?style=flat&logo=github)](https://github.com/xiaogangpeng/TBIFormer)![](https://img.shields.io/github/stars/xiaogangpeng/tbiformer?style=social) [![Website](https://img.shields.io/badge/Website-Demo-badcfe?style=flat)](https://xiaogangpeng.github.io/projects/tbiformer/page.html) [![arXiv](https://img.shields.io/badge/arXiv-2403.07487-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/2303.05095)
 </div>
 </div>
 
