@@ -27,7 +27,7 @@ I am an incoming PhD student in the [Khoury College of Computer Sciences](https:
 - *2023.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2023!
 
 # 📝 Publications 
-
+(* indicates equal contribution)
 
 
 
@@ -38,10 +38,6 @@ HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion 
 
 **Xiaogang Peng\***, Yiming Xie\*, Zizhao Wu, Varun Jampani, Deqing Sun, Huaizu Jiang 
 
-(* indicates equal contribution)
-
-
-[**Codes**](https://github.com/neu-vi/HOI-Diff) ![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social) \| [**Project Page**](https://neu-vi.github.io/HOI-Diff/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Code-fedcba?style=flat&logo=github)](https://github.com/neu-vi/HOI-Diff)![](https://img.shields.io/github/stars/neu-vi/HOI-Diff?style=social) [![Website](https://img.shields.io/badge/Website-Demo-badcfe?style=flat)](https://neu-vi.github.io/HOI-Diff/) [![arXiv](https://img.shields.io/badge/arXiv-2403.07487-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/2312.06553)
 
