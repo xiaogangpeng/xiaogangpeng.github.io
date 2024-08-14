@@ -75,7 +75,7 @@ Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting
 
 
 # 📖 Educations
-<!-- - *2024.09 - present*, Ph.D, Northeastern University 🇺🇸, Boston, USA -->
+- *2024.09 - present*, Ph.D, Northeastern University 🇺🇸, Boston, USA
 - *2021.09 - 2024.06*, M.Sc, Hangzhou Dianzi University 🇨🇳, Hangzhou, China
 - *2016.09 - 2020.06*, B.Sc, Hangzhou Dianzi University 🇨🇳, Hangzhou, China. 
 
@@ -109,7 +109,7 @@ Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting
 
 # 💬 Academic Service
 
-- *Conference Reviewer:* NeurIPS 2024, ACM MM 2024, CVPR 2024, ACM MM 2023, 
+- *Conference Reviewer:* AAAI 2025, NeurIPS 2024, ACM MM 2024, CVPR 2024, ACM MM 2023, 
 
 - *Journal Reviewer:*  Neurocomputing
 
