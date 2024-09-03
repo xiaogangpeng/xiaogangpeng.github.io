@@ -19,7 +19,7 @@ redirect_from:
 
 # 👤 About Me 
 
-I am an incoming PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/), supervised by [Prof. Huaizu Jiang](https://jianghz.me/). Before that, I recieved my Bachelor's and Master's degrees from [Hangzhou Dianzi University](https://iimc.hdu.edu.cn/index), supervised by [Prof. Zizhao Wu](https://zizhao.me/). My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation. In my spare time, I like to take photos and videos, some of my small works I put on my [personal blog](https://xiaogangpeng.github.io/blogs/dist).
+I am an first-year PhD student in the [Khoury College of Computer Sciences](https://www.khoury.northeastern.edu/)@[Notheastern Univeristy](https://northeastern.edu/), supervised by [Prof. Huaizu Jiang](https://jianghz.me/). Before that, I recieved my Bachelor's and Master's degrees from [Hangzhou Dianzi University](https://iimc.hdu.edu.cn/index), supervised by [Prof. Zizhao Wu](https://zizhao.me/). My primary research interests include computer vision and deep learning, mainly focusing on human motion generation and 3D generation. In my spare time, I like to take photos and videos, some of my small works I put on my [personal blog](https://xiaogangpeng.github.io/blogs/dist).
 
 
 # 🔥 News
@@ -109,7 +109,7 @@ Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting
 
 # 💬 Academic Service
 
-- *Conference Reviewer:* AAAI 2025, NeurIPS 2024, ACM MM 2024, CVPR 2024, ACM MM 2023, 
+- *Conference Reviewer:* ICLR 2025, AAAI 2025, NeurIPS 2024, ACM MM 2024, CVPR 2024, ACM MM 2023, 
 
 - *Journal Reviewer:*  Neurocomputing
 
