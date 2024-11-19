@@ -109,11 +109,12 @@ Trajectory-Aware Body Interaction Transformer for Multi-Person Pose Forecasting
 
 # 💬 Academic Service
 
-- Conference Reviewer:
-*CVPR (2024, 2025), ICLR 2025, AAAI 2025, NeurIPS 2024, ACM MM (2023,2024)*
+- Conference Reviewer:<br>
+*CVPR (2024, 2025)*<br> 
+*ICLR 2025*<br> *AAAI 2025*<br> *NeurIPS 2024*<br>  *ACM MM (2023, 2024)*
 
-- Journal Reviewer:
-*IEEE TMM, Neurocomputing*
+- Journal Reviewer:<br> 
+*IEEE TPAMI*<br> *IEEE TMM*<br>  *Neurocomputing*
 
 
 
