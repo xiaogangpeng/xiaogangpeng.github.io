@@ -30,6 +30,20 @@ I am a first-year PhD student in the [Khoury College of Computer Sciences](https
 (* indicates equal contribution)
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/HOI-Diff_teaser.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Rethinking Diffusion for Text-Driven Human Motion Generation
+
+Zichong Meng, Yiming Xie, **Xiaogang Peng**, Zeyu Han, Huaizu Jiang
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-Code-fedcba?style=flat&logo=github)](https://github.com/neu-vi/MARDM)![](https://img.shields.io/github/stars/neu-vi/MARDM?style=social) [![Website](https://img.shields.io/badge/Website-Demo-badcfe?style=flat)](https://neu-vi.github.io/MARDM/) [![arXiv](https://img.shields.io/badge/arXiv-2411.16575-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/2411.16575)
+
+</div>
+</div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/HOI-Diff_teaser.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
