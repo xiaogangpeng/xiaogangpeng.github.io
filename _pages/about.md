@@ -30,7 +30,7 @@ I am a first-year PhD student in the [Khoury College of Computer Sciences](https
 (* indicates equal contribution)
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/MARDM_teaser.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/MARDM_teaser.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 Rethinking Diffusion for Text-Driven Human Motion Generation
