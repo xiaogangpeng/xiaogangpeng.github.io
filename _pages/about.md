@@ -45,7 +45,7 @@ Zichong Meng, Yiming Xie, **Xiaogang Peng**, Zeyu Han, Huaizu Jiang
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/HOI-Diff_teaser.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2025</div><img src='images/HOI-Diff_teaser.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 HOI-Diff: Text-Driven Synthesis of 3D Human-Object Interactions using Diffusion Models
