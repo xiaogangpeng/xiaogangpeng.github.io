@@ -1,0 +1,35 @@
+name: Google Scholar stats
+
+on:
+  schedule:
+    # Daily at 08:00 UTC.
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Fetch stats
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: python google_scholar_crawler/main.py
+
+      - name: Publish to google-scholar-stats branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./results
+          publish_branch: google-scholar-stats
+          force_orphan: true

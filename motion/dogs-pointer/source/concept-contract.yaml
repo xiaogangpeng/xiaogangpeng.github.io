@@ -1,0 +1,72 @@
+# Oil Motion — Concept Contract
+# Single source of truth for what the user explicitly asked for.
+# Locked fields come from the user's choices; TODO fields still block production.
+
+subject_count: 1  # scoped to one dog for the pilot; second dog is a later element
+
+subjects:
+  # TODO(blocking): fill each identity anchor from the reference photos.
+  # These anchors become the Identity Bible and are copied verbatim into every
+  # keyframe prompt, so they must be verifiable from the photos alone.
+  # Identity is carried by the supplied keyframes; anchors are written out in
+  # source/identity-bible.md so the video prompt can forbid drift.
+  - identity: >
+      Long-haired dachshund, seated. Golden-tan base coat with a dark
+      chocolate saddle over back and skull; long feathered dark-brown ears
+      hanging below the jaw; pale cream chest and throat; long heavily
+      feathered tail; tan muzzle with a rounded dark-brown nose; amber-brown
+      eyes with dark outlines. No collar, no accessories.
+
+# TODO(blocking): the user's own word for the visual style. On this route the
+# keyframes are user-supplied, so style is descriptive rather than generative —
+# but it still constrains the video prompt.
+style: "插画"  # user's own word — cel-shaded illustration, not CGI or painterly
+
+motion_intent: >
+  Pointer X position scrubs a single linear timeline between the two supplied
+  keyframes, so both dogs appear to track the cursor left-to-right.
+
+background_owner: video
+
+# Required now that the video owns the background.
+# TODO(blocking): confirm from the two supplied keyframes — the scene, camera and
+# lighting must stay continuous across the whole transition.
+scene: >
+  Flat near-white studio backdrop (#FEFDFE), no props and no visible horizon.
+  Soft, even frontal light with no colour cast and no cast shadow on the
+  backdrop. The dog is seated with its front paws as the contact point on an
+  implied ground line near the bottom of the frame. Locked camera, locked
+  framing, square 1:1.
+
+
+driver: pointer
+input_semantics: continuous
+time_control: scrub
+navigation: continuous
+
+# One linear transition between the two supplied keyframes.
+# NOTE: motion_budget.py --strict REJECTS parameter_space=2d with
+# background_owner=video ("烘焙视频是一条线性时间轴"), so the 2-D direction grid is
+# not reachable on this route. Pointer X scrubs a single axis instead.
+parameter_space: linear
+clip_continuity: independent
+
+continuity:
+  - Identity anchors (fur colour, markings, facial features, body proportions)
+    stay identical across every sample.
+  - The two dogs keep the same relative position, spacing and scale in every cell.
+  - The dog turns in place: seated throughout, front paws stay the contact
+    point, no walking and no leaving frame. The supplied keyframes do contain a
+    body rotation and a small lateral weight shift (~9% of frame width) — that
+    is intended and must read as one continuous turn, not a cut or a slide.
+  - Scene, camera framing, light direction and ground contact stay continuous for
+    the whole transition (the video owns the background on this route).
+
+destination:
+  placement: persistent corner element on the page (not the hero portrait)
+  # PROVISIONAL: 220x220 CSS px was used for the budget run below. Confirm once
+  # the corner element is designed, then re-run motion_budget.py.
+  max_display_size: 220x220
+  target_devices: desktop + mobile
+  # Pointer does not exist on touch devices — the Motion Brief must define the
+  # rest state that mobile and reduced-motion visitors see instead.

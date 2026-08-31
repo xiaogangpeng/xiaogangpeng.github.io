@@ -1,0 +1,35 @@
+---
+import { profile } from '../data/profile.ts';
+
+// Served from the `google-scholar-stats` branch that the crawler workflow
+// publishes. Hidden entirely until that branch has data.
+const dataUrl = `https://cdn.jsdelivr.net/gh/${profile.repository}@google-scholar-stats/gs_data.json`;
+---
+
+<a
+  id="scholar-badge"
+  href={`https://scholar.google.com/citations?user=${profile.scholarId}`}
+  data-url={dataUrl}
+  hidden
+  class="inline-flex items-center gap-1.5 rounded-full border border-line px-2.5 py-1 text-xs no-underline hover:no-underline"
+>
+  <span class="text-ink-faint">Citations</span>
+  <span id="scholar-count" class="font-semibold text-ink tabular-nums"></span>
+</a>
+
+<script>
+  const badge = document.getElementById('scholar-badge');
+  const count = document.getElementById('scholar-count');
+  const url = badge?.dataset.url;
+  if (badge && count && url) {
+    fetch(url)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((data) => {
+        if (typeof data?.citedby !== 'number') return;
+        count.textContent = String(data.citedby);
+        badge.hidden = false;
+      })
+      // No stats branch yet (or offline) — stay hidden rather than show a hole.
+      .catch(() => {});
+  }
+</script>

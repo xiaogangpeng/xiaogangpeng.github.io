@@ -1,0 +1,67 @@
+---
+import type { SocialLink } from '../data/profile.ts';
+import Icon from './Icon.astro';
+
+interface Props {
+  social: SocialLink;
+}
+const { social } = Astro.props;
+
+const style = `--brand:${social.brand};${
+  social.brandDark ? `--brand-dark:${social.brandDark};` : ''
+}`;
+
+// Handles with no web page render as a copy button rather than a dead link.
+const Tag = social.copy ? 'button' : 'a';
+const attrs = social.copy
+  ? {
+      type: 'button' as const,
+      'data-copy': social.copy,
+      // Keeps the handle readable on hover even if the clipboard is blocked.
+      title: `${social.label}: ${social.copy}`,
+    }
+  : { href: social.href };
+---
+
+<Tag
+  {...attrs}
+  class:list={[
+    'group inline-flex items-center gap-2 text-sm text-ink-soft no-underline hover:text-ink hover:no-underline',
+    social.copy && 'cursor-pointer',
+  ]}
+>
+  <span
+    class="brand-tile grid h-6 w-6 place-items-center rounded-[0.3rem] text-white transition group-hover:scale-105"
+    style={style}
+  >
+    <Icon name={social.icon} class="h-3.5 w-3.5" />
+  </span>
+  <span data-label>{social.label}</span>
+</Tag>
+
+<script>
+  // Copy-to-clipboard for handles like WeChat, with brief inline confirmation.
+  document.querySelectorAll<HTMLElement>('[data-copy]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const value = button.dataset.copy;
+      const label = button.querySelector<HTMLElement>('[data-label]');
+      if (!value || !label || label.dataset.busy) return;
+
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch {
+        // Clipboard blocked (insecure context or denied) — leave the label be;
+        // the id is still readable from the title attribute.
+        return;
+      }
+
+      const original = label.textContent;
+      label.dataset.busy = 'true';
+      label.textContent = 'Copied';
+      setTimeout(() => {
+        label.textContent = original;
+        delete label.dataset.busy;
+      }, 1400);
+    });
+  });
+</script>

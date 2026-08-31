@@ -1,0 +1,21 @@
+---
+interface Props {
+  id?: string;
+  /** `soft` paints the alternating tinted background band. */
+  tone?: 'plain' | 'soft';
+  /** `tight` for closing flourishes that should not eat a full section of height. */
+  pad?: 'default' | 'tight';
+  class?: string;
+}
+const { id, tone = 'plain', pad = 'default', class: className = '' } = Astro.props;
+const padding = pad === 'tight' ? 'py-10 sm:py-12' : 'py-14 sm:py-16';
+---
+
+<section
+  id={id}
+  class={`scroll-mt-16 ${tone === 'soft' ? 'bg-surface-soft' : 'bg-surface'} ${className}`}
+>
+  <div class={`mx-auto max-w-6xl px-6 ${padding}`}>
+    <slot />
+  </div>
+</section>

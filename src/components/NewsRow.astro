@@ -1,0 +1,21 @@
+---
+import type { NewsItem } from '../data/news.ts';
+
+interface Props {
+  item: NewsItem;
+  /** Rows inside the collapsed disclosure opt out of the scroll reveal. */
+  reveal?: boolean;
+  /** Inline `--reveal-delay` for staggering. */
+  delay?: string;
+}
+const { item, reveal = false, delay } = Astro.props;
+---
+
+<li
+  class="grid gap-0.5 py-2.5 sm:grid-cols-[5.5rem_1fr] sm:gap-5"
+  data-reveal={reveal ? '' : undefined}
+  style={reveal ? delay : undefined}
+>
+  <time class="text-xs tabular-nums text-ink-faint sm:pt-[0.15rem]">{item.date}</time>
+  <p class="text-sm leading-6" set:html={item.html} />
+</li>

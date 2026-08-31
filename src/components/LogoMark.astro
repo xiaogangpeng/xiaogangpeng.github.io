@@ -1,0 +1,36 @@
+---
+interface Props {
+  logo?: string;
+  monogram: string;
+  alt?: string;
+}
+const { logo, monogram, alt = '' } = Astro.props;
+---
+
+<div class="flex h-12 w-28 shrink-0 items-center sm:w-32">
+  {
+    logo ? (
+      /* Several of these PNGs have white baked into them, so every logo sits on
+         the same white plate — otherwise they read as raw white blocks in dark
+         mode. */
+      <span
+        class="grid h-12 w-full place-items-center rounded-md bg-white px-2 py-1.5 ring-1 ring-line"
+      >
+        <img
+          src={logo}
+          alt={alt}
+          loading="lazy"
+          decoding="async"
+          class="max-h-9 w-auto max-w-full object-contain"
+        />
+      </span>
+    ) : (
+      /* No logo asset for this institution — show initials instead of a hole. */
+      <span
+        class="grid h-12 w-full place-items-center rounded-md border border-line text-sm font-semibold tracking-wide text-ink-faint"
+      >
+        {monogram}
+      </span>
+    )
+  }
+</div>

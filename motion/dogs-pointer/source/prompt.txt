@@ -1,0 +1,32 @@
+Use the supplied first and last frames as the exact identity and design
+references for the long-haired dachshund. Preserve the same silhouette, anatomy,
+face, colors, line work, texture, and proportions in every frame. Keep the
+golden-tan base coat, the dark chocolate saddle over the back and skull, the long
+feathered dark-brown ears hanging below the jaw, the pale cream chest and throat,
+the long heavily feathered tail, the tan muzzle with a rounded dark-brown nose,
+and the amber-brown eyes with dark outlines. The dog wears no collar, tag,
+harness or lead. Do not add, remove, duplicate, or redesign any body part,
+accessory, feature, or prop, and do not introduce a second dog.
+
+Preserve the original illustration style exactly. Keep line thickness, halftone
+texture, flat color regions, and edge sharpness consistent. Do not turn the
+subject into volumetric CGI, photorealistic, painterly, or glossy imagery.
+
+Locked camera and locked framing. No camera pan, tilt, zoom, orbit, shake,
+reframing, perspective change, lens change, depth of field, or lighting change.
+The dog stays seated for the entire shot and its front paws remain the contact
+point on the ground line. Only the head, neck, ears, tail, and the rotation of
+the upper body may move. The dog does not stand, walk, rise, or leave the frame.
+
+The scene is a flat near-white studio backdrop with soft even frontal light and
+the front paws resting on an implied ground line near the bottom of the frame.
+Keep the environment, light direction, color temperature, ground contact,
+shadows, and depth of field identical and continuous across the entire shot. The
+background is part of the final picture: no chroma key, no flat color backdrop,
+no background replacement, and no transparency.
+
+Motion: one single continuous turn. The dog begins looking off to its left as in
+the first frame, sweeps smoothly through a near-frontal gaze at the midpoint, and
+settles looking off to its right as in the last frame. The ears and tail follow
+the turn with soft natural lag. The motion is even and unhurried, with no pause,
+no reversal, no head bob, and no cut.

@@ -1,0 +1,54 @@
+# Oil Motion — Motion Brief
+# Derived plan only. Does not restate Concept Contract fields.
+
+concept_contract: source/concept-contract.yaml
+identity_bible: source/identity-bible.md
+
+parameter_space: linear
+media_access: random  # pointer scrub jumps to arbitrary positions
+
+gesture_policy:
+  unit: continuous
+  inertia: coalesce      # smooth toward the pointer, do not queue every move
+  while_active: retarget # a new pointer position overrides the in-flight target
+  boundary: clamp        # hold the end frames past the edges, do not wrap
+  programmatic_navigation: ignore
+
+storyboard: >
+  One continuous head-and-body turn. The dog starts looking off to its left,
+  passes through a near-frontal gaze at the midpoint, and ends looking off to
+  its right. Pointer X across the viewport maps onto that single sweep.
+
+keyframes:
+  K0: source/first-frame.png   # looking left
+  K1: source/last-frame.png    # looking right
+clip_chain:
+  - segment-01: K0 -> K1
+
+# No pointer exists on touch devices, and reduced-motion visitors get no
+# animation at all. Both fall back to the SAME frame: the 50% position of the
+# compiled timeline, which is the near-frontal gaze. It must be extracted from
+# the compiled video (compile_scroll_video.py emits poster.png), never
+# hand-picked from K0/K1 — those are the two extremes and would look like the
+# dog is permanently staring off-screen.
+rest_state: compiled timeline at 50% (near-frontal gaze)
+
+loop: open          # K0 -> K1 is an open sweep, not a closed cycle
+anchor: bottom      # front paws sit on the implied ground line
+
+scene_continuity: >
+  Flat near-white backdrop, soft even frontal light, no cast shadow, no props.
+  Identical for the whole shot; nothing enters or leaves the frame.
+
+frame_policy: native   # keep the model's own frames; no interpolation
+target_fps: source     # locked to the master's real fps, read via probe
+
+quality_target:
+  css_size: 220x220
+  dpr: 2
+  required_cell: 440x440
+  source_resolution: 768p   # 768x768 at 1:1; upgrade to 2K only if soft
+  desktop_width: 440
+  mobile_width: 320
+
+reduced_motion: same as rest_state (static poster, no video element autoplay)

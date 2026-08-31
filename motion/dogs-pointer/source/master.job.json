@@ -1,0 +1,52 @@
+{
+  "payload": {
+    "model": "minimax/minimax-h3",
+    "content": [
+      {
+        "type": "text",
+        "text": "Use the supplied first and last frames as the exact identity and design\nreferences for the long-haired dachshund. Preserve the same silhouette, anatomy,\nface, colors, line work, texture, and proportions in every frame. Keep the\ngolden-tan base coat, the dark chocolate saddle over the back and skull, the long\nfeathered dark-brown ears hanging below the jaw, the pale cream chest and throat,\nthe long heavily feathered tail, the tan muzzle with a rounded dark-brown nose,\nand the amber-brown eyes with dark outlines. The dog wears no collar, tag,\nharness or lead. Do not add, remove, duplicate, or redesign any body part,\naccessory, feature, or prop, and do not introduce a second dog.\n\nPreserve the original illustration style exactly. Keep line thickness, halftone\ntexture, flat color regions, and edge sharpness consistent. Do not turn the\nsubject into volumetric CGI, photorealistic, painterly, or glossy imagery.\n\nLocked camera and locked framing. No camera pan, tilt, zoom, orbit, shake,\nreframing, perspective change, lens change, depth of field, or lighting change.\nThe dog stays seated for the entire shot and its front paws remain the contact\npoint on the ground line. Only the head, neck, ears, tail, and the rotation of\nthe upper body may move. The dog does not stand, walk, rise, or leave the frame.\n\nThe scene is a flat near-white studio backdrop with soft even frontal light and\nthe front paws resting on an implied ground line near the bottom of the frame.\nKeep the environment, light direction, color temperature, ground contact,\nshadows, and depth of field identical and continuous across the entire shot. The\nbackground is part of the final picture: no chroma key, no flat color backdrop,\nno background replacement, and no transparency.\n\nMotion: one single continuous turn. The dog begins looking off to its left as in\nthe first frame, sweeps smoothly through a near-frontal gaze at the midpoint, and\nsettles looking off to its right as in the last frame. The ears and tail follow\nthe turn with soft natural lag. The motion is even and unhurried, with no pause,\nno reversal, no head bob, and no cut."
+      },
+      {
+        "type": "image_url",
+        "role": "first_frame",
+        "image_url": {
+          "url": "<local-image-data-uri>"
+        }
+      },
+      {
+        "type": "image_url",
+        "role": "last_frame",
+        "image_url": {
+          "url": "<local-image-data-uri>"
+        }
+      }
+    ],
+    "resolution": "768p",
+    "generate_audio": false,
+    "watermark": false,
+    "return_last_frame": true,
+    "duration": 5,
+    "ratio": "1:1"
+  },
+  "submit": {
+    "id": "d288fa918d66403c96f611d5d3598302",
+    "status": "queued",
+    "model": "minimax/minimax-h3"
+  },
+  "final": {
+    "id": "d288fa918d66403c96f611d5d3598302",
+    "status": "succeeded",
+    "content": {
+      "video_url": "<remote-url-redacted>"
+    },
+    "model": "minimax/minimax-h3"
+  },
+  "productionGate": {
+    "stage": "pilot",
+    "segmentIndex": 1
+  },
+  "lastFrame": {
+    "path": "/Users/ericpeng/Desktop/Code_Repos/xiaogangpeng.github.io/motion/dogs-pointer/source/master-tail.png",
+    "source": "video-fallback"
+  }
+}

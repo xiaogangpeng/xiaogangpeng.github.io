@@ -1,0 +1,241 @@
+---
+import Base from '../layouts/Base.astro';
+import Band from '../components/Band.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+import LogoMark from '../components/LogoMark.astro';
+import MotionBand from '../components/MotionBand.astro';
+import NewsRow from '../components/NewsRow.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import VenueSummary from '../components/VenueSummary.astro';
+import WorldMap from '../components/WorldMap.astro';
+import { education, experience, honors, service } from '../data/cv.ts';
+import { news, newsVisibleCount } from '../data/news.ts';
+import { publications } from '../data/publications.ts';
+
+const newsSorted = [...news].sort((a, b) => b.date.localeCompare(a.date));
+const newsVisible = newsSorted.slice(0, newsVisibleCount);
+const newsHidden = newsSorted.slice(newsVisibleCount);
+const hasEqualContribution = publications.some((p) =>
+  p.authors.some((a) => a.equal)
+);
+
+/* Cascade rows in a list rather than popping them in at once. Capped so long
+   lists do not end up waiting on a half-second delay. */
+const stagger = (index: number) => `--reveal-delay:${Math.min(index, 5) * 60}ms`;
+---
+
+<Base>
+  <Header />
+
+  <main id="main">
+    <div id="top"></div>
+
+    {/* No data-reveal here: the hero is the LCP element and should paint at once. */}
+    <section id="about" class="scroll-mt-16">
+      <Hero />
+    </section>
+
+    <MotionBand />
+
+    <Band id="news" tone="soft">
+      <h2 class="section-title" data-reveal>News</h2>
+
+      <ol class="row-divide">
+        {newsVisible.map((item, i) => <NewsRow item={item} reveal delay={stagger(i)} />)}
+      </ol>
+
+      {
+        newsHidden.length > 0 && (
+          /* Native <details> so the overflow rows stay reachable with no JS. */
+          <details class="group mt-4" data-reveal>
+            <summary
+              class="summary-reset inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-1.5 text-xs text-ink-soft transition hover:border-accent/40 hover:text-accent"
+            >
+              <span class="group-open:hidden">Show {newsHidden.length} more</span>
+              <span class="hidden group-open:inline">Show less</span>
+              <Icon name="chevron" class="h-3.5 w-3.5 transition group-open:rotate-180" />
+            </summary>
+
+            <ol class="row-divide mt-3 border-t border-line-soft">
+              {newsHidden.map((item) => <NewsRow item={item} />)}
+            </ol>
+          </details>
+        )
+      }
+    </Band>
+
+    <Band id="publications">
+      <h2 class="section-title" data-reveal>Publications</h2>
+
+      <div class="mb-10" data-reveal>
+        <VenueSummary />
+      </div>
+
+      <div class="space-y-10">
+        {
+          publications.map((publication, i) => (
+            <div data-reveal style={stagger(i)}>
+              <PublicationCard publication={publication} />
+            </div>
+          ))
+        }
+      </div>
+
+      {
+        hasEqualContribution && (
+          <p class="mt-8 text-xs text-ink-faint" data-reveal>
+            * indicates equal contribution.
+          </p>
+        )
+      }
+    </Band>
+
+    <Band id="education" tone="soft">
+      <h2 class="section-title" data-reveal>Education</h2>
+      <ol class="row-divide">
+        {
+          education.map((item, i) => (
+            <li
+              class="flex flex-col gap-3 py-5 sm:flex-row sm:items-start sm:gap-6"
+              data-reveal
+              style={stagger(i)}
+            >
+              <LogoMark logo={item.logo} monogram={item.monogram} alt={item.institution} />
+
+              <div class="min-w-0 flex-1">
+                <p class="text-[0.9375rem] font-medium">
+                  {item.institutionUrl ? (
+                    <a href={item.institutionUrl}>{item.institution}</a>
+                  ) : (
+                    <span class="text-ink">{item.institution}</span>
+                  )}
+                </p>
+                {item.division && (
+                  <p class="mt-0.5 text-sm">
+                    {item.divisionUrl ? (
+                      <a href={item.divisionUrl}>{item.division}</a>
+                    ) : (
+                      item.division
+                    )}
+                  </p>
+                )}
+                <p class="mt-0.5 text-sm text-ink-faint">
+                  {item.degree}
+                  {item.advisor && (
+                    <>
+                      {', supervised by '}
+                      {item.advisorUrl ? (
+                        <a href={item.advisorUrl}>{item.advisor}</a>
+                      ) : (
+                        item.advisor
+                      )}
+                    </>
+                  )}
+                </p>
+              </div>
+
+              <div class="shrink-0 text-sm text-ink-faint sm:text-right">
+                <p class="tabular-nums">{item.period}</p>
+                <p class="mt-0.5">{item.place}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </Band>
+
+    <Band id="experience">
+      <h2 class="section-title" data-reveal>Research Experience</h2>
+      <ol class="row-divide">
+        {
+          experience.map((item, i) => (
+            <li
+              class="flex flex-col gap-3 py-5 sm:flex-row sm:items-start sm:gap-6"
+              data-reveal
+              style={stagger(i)}
+            >
+              <LogoMark logo={item.logo} monogram={item.monogram} alt={item.organization} />
+
+              <div class="min-w-0 flex-1">
+                <p class="text-[0.9375rem] font-medium">
+                  {item.groupUrl ? (
+                    <a href={item.groupUrl}>{item.group}</a>
+                  ) : (
+                    <span class="text-ink">{item.group}</span>
+                  )}
+                  {item.organization && (
+                    <span class="text-ink-faint">
+                      {', '}
+                      {item.organizationUrl ? (
+                        <a href={item.organizationUrl}>{item.organization}</a>
+                      ) : (
+                        item.organization
+                      )}
+                    </span>
+                  )}
+                </p>
+                <p class="mt-0.5 text-sm text-ink-faint">
+                  {item.role}
+                  {item.detail && ` — ${item.detail}`}
+                </p>
+              </div>
+
+              <div class="shrink-0 text-sm text-ink-faint sm:text-right">
+                <p class="tabular-nums">{item.period}</p>
+                <p class="mt-0.5">{item.place}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+
+      <h3 class="label mt-12 mb-4" data-reveal>Academic Service</h3>
+      <dl class="row-divide">
+        {
+          service.map((group, i) => (
+            <div
+              class="grid gap-1 py-3 sm:grid-cols-[11rem_1fr] sm:gap-6"
+              data-reveal
+              style={stagger(i)}
+            >
+              <dt class="text-sm text-ink-faint">{group.label}</dt>
+              <dd class="text-[0.9375rem]">{group.items.join(' · ')}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </Band>
+
+    <Band id="honors" tone="soft">
+      <h2 class="section-title" data-reveal>Honors &amp; Awards</h2>
+      <ol class="row-divide">
+        {
+          honors.map((item, i) => (
+            <li
+              class="grid gap-1 py-3 sm:grid-cols-[6rem_1fr] sm:gap-6"
+              data-reveal
+              style={stagger(i)}
+            >
+              <time class="text-sm tabular-nums text-ink-faint">{item.date}</time>
+              <p class="text-[0.9375rem]">
+                <span class="text-ink">{item.title}</span>
+                {item.institution && (
+                  <span class="text-ink-faint"> · {item.institution}</span>
+                )}
+              </p>
+            </li>
+          ))
+        }
+      </ol>
+    </Band>
+    <Band id="places" pad="tight">
+      <h2 class="section-title">Places</h2>
+      <WorldMap />
+    </Band>
+  </main>
+
+  <Footer />
+</Base>

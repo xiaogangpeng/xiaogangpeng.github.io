@@ -1,0 +1,23 @@
+---
+import { profile } from '../data/profile.ts';
+const { portrait } = profile;
+---
+
+<figure class="m-0">
+  <div
+    class="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-line-soft ring-1 ring-line shadow-sm"
+  >
+    <picture>
+      <source srcset={portrait.webp} type="image/webp" />
+      <img
+        src={portrait.jpg}
+        alt={portrait.alt}
+        width="640"
+        height="800"
+        class="h-full w-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </picture>
+  </div>
+</figure>

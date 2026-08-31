@@ -1,0 +1,29 @@
+---
+import { publications } from '../data/publications.ts';
+
+/* Derived from the publication list so it can never drift out of sync. */
+const counts = new Map<string, string[]>();
+for (const pub of publications) {
+  const names = counts.get(pub.venue) ?? [];
+  names.push(pub.short ?? pub.title);
+  counts.set(pub.venue, names);
+}
+
+const rows = [...counts.entries()].sort((a, b) => b[1].length - a[1].length);
+---
+
+<div class="rounded-xl border border-line bg-surface p-5">
+  <p class="label mb-3">Accepted Papers</p>
+  <ul class="grid gap-x-8 gap-y-2 sm:grid-cols-2">
+    {
+      rows.map(([venue, names]) => (
+        <li class="flex flex-wrap items-baseline gap-x-2 text-sm">
+          <span class="font-semibold text-accent">
+            {venue} × {names.length}
+          </span>
+          <span class="text-ink-faint">{names.join(', ')}</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>

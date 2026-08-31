@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (Tailwind v4 needs this declared explicitly).
+   NOTE: `@apply dark:*` inside @layer base is silently dropped by Tailwind v4,
+   so all element-level theming goes through the semantic custom properties
+   below. Utilities in markup (`dark:text-...`) work normally. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Expose the semantic tokens to Tailwind so `bg-surface-soft`, `text-ink-faint`
+   etc. exist as utilities. They resolve at use time, so flipping the values on
+   `.dark` re-themes every utility at once. */
+@theme {
+  /* Rounded, warm sans. Note: Nunito has no `tnum` feature, so the
+     `tabular-nums` utility is inert — date columns rely on the fixed grid
+     track for alignment rather than on tabular figures. */
+  --font-sans: "Nunito Variable", ui-rounded, ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans SC", sans-serif;
+
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold: var(--gold);
+  --color-map-land: var(--map-land);
+  --color-map-edge: var(--map-edge);
+}
+
+@layer base {
+  :root {
+    --surface: #ffffff;
+    --surface-soft: #f8f9fc;
+    --ink: #121317;
+    --ink-soft: #45474d;
+    --ink-faint: #7a7e87;
+    --line: #e6eaf0;
+    --line-soft: #eef1f5;
+    --accent: #0b57d0;
+    --accent-soft: #e8f0fe;
+    --gold: #9a6b16;
+    /* The world map needs its own pair: reusing --line-soft made the landmass
+       vanish against the dark surface. */
+    --map-land: #e6ebf2;
+    --map-edge: #d3dae4;
+  }
+
+  .dark {
+    --surface: #0a0b0e;
+    --surface-soft: #12141a;
+    --ink: #e9ebf1;
+    --ink-soft: #b8bcc7;
+    --ink-faint: #8a8f9c;
+    --line: #23262e;
+    --line-soft: #1a1d23;
+    --accent: #7fb0f7;
+    --accent-soft: #16233a;
+    --gold: #d6ab5c;
+    --map-land: #262c37;
+    --map-edge: #333b48;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset for the sticky header when jumping to #anchors. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--surface);
+    color: var(--ink-soft);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration-line: none;
+    transition: color 150ms ease, opacity 150ms ease;
+  }
+
+  a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--accent-soft);
+  }
+
+  /* Scroll reveal.
+
+     Armed only when the inline head script has added `.js-reveal` to <html>, so
+     if the script never runs the content simply stays visible instead of being
+     stuck at opacity 0. Wrapped in a no-preference query so it is entirely
+     absent for visitors who ask for reduced motion. The hero deliberately opts
+     out — it is the LCP element and should paint immediately. */
+  @media (prefers-reduced-motion: no-preference) {
+    .js-reveal [data-reveal] {
+      opacity: 0;
+      transform: translateY(14px);
+      transition:
+        opacity 600ms cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms),
+        transform 600ms cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms);
+    }
+
+    .js-reveal [data-reveal].is-revealed {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Honour the OS reduced-motion setting site-wide. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Uppercase micro-label: role chips, sub-headings, table captions. */
+  .label {
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--ink-faint);
+  }
+
+  /* Big, light section title with a hairline rule beneath it. */
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Brand-coloured social tile. Colours arrive as inline custom properties so
+     each link can carry its own, with an optional dark-surface override. */
+  .brand-tile {
+    background-color: var(--brand);
+  }
+
+  .dark .brand-tile {
+    background-color: var(--brand-dark, var(--brand));
+  }
+
+  /* Hero backdrop when no photo is configured: an accent glow over a vertical
+     surface ramp. Uses the semantic tokens, so it re-themes with dark mode. */
+  .hero-wash {
+    background:
+      radial-gradient(110% 90% at 12% 0%, var(--accent-soft) 0%, transparent 62%),
+      linear-gradient(to bottom, var(--surface), var(--surface-soft));
+  }
+
+  /* <summary> styled as a button: drop the native disclosure triangle. */
+  .summary-reset {
+    list-style: none;
+  }
+
+  .summary-reset::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Row separator used by the news / education / honors lists. */
+  .row-divide > * + * {
+    border-top: 1px solid var(--line-soft);
+  }
+}

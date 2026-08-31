@@ -1,0 +1,90 @@
+---
+import '@fontsource-variable/nunito';
+import '../styles/global.css';
+import { profile } from '../data/profile.ts';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = `${profile.name} · ${profile.headline}`,
+  description = `${profile.headline} at Northeastern University. Research on ${profile.interests.join(', ')}.`,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en" class="scheme-light dark:scheme-dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/images/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Resolve the theme before first paint so there is no light/dark flash,
+         and arm the scroll-reveal CSS only now that JS is confirmed to run. -->
+    <script is:inline>
+      (() => {
+        const stored = localStorage.getItem('theme');
+        const dark =
+          stored === 'dark' ||
+          (!stored && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+        document.documentElement.classList.add('js-reveal');
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm dark:focus:bg-zinc-900"
+    >
+      Skip to content
+    </a>
+    <slot />
+
+    <script>
+      // Reveal elements as they scroll into view. Anything already on screen at
+      // load reveals straight away, because IntersectionObserver fires once on
+      // observe. Each element is unobserved after revealing so it never
+      // re-animates on the way back up.
+      const targets = document.querySelectorAll<HTMLElement>('[data-reveal]');
+
+      if (!targets.length) {
+        // nothing to do
+      } else if (!('IntersectionObserver' in window)) {
+        // No observer support: show everything rather than hide it.
+        targets.forEach((el) => el.classList.add('is-revealed'));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          },
+          // Start slightly before the element is fully in view.
+          { rootMargin: '0px 0px -8% 0px', threshold: 0 }
+        );
+
+        targets.forEach((el) => observer.observe(el));
+      }
+    </script>
+  </body>
+</html>

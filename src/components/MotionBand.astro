@@ -1,0 +1,238 @@
+---
+import MotionScenery from './MotionScenery.astro';
+import { motionBand as m } from '../data/motion.ts';
+---
+
+{
+  m.enabled && (
+    /* Narrow divider band between the profile and News.
+
+       The band background is #FAFAFA because that is the exact colour the
+       compiled video bakes into its backdrop (measured on the encoded frames:
+       stdev 0 across all four corners). Matching it makes the video's edges
+       invisible, which is what makes the baked-video route usable here — as a
+       floating tile it read as a raw white rectangle on dark backgrounds. The
+       colour is intentionally fixed in both themes; in dark mode the band is a
+       deliberate light inset strip. */
+    <div
+      id="motion-band"
+      class="overflow-hidden border-y border-line bg-[#FAFAFA]"
+      data-desktop={m.desktop}
+      data-mobile={m.mobile}
+      data-timeline={m.timeline}
+      data-breakpoint={m.mobileBreakpoint}
+    >
+      <div class="mx-auto flex max-w-6xl flex-col items-center px-6">
+        <div class="flex w-full items-end justify-center gap-1">
+        {/* Scenery flanks the tile; it cannot go behind an opaque video.
+            Height-locked to the tile so the flex track cannot stretch it. */}
+        <div class="hidden h-28 pb-1 sm:block sm:h-32">
+          <MotionScenery side="left" />
+        </div>
+
+        <div class="pointer-events-none w-28 shrink-0 select-none sm:w-32" aria-hidden="true">
+          {/* Server-rendered rest state. JS swaps in the scrubbable video only
+              when a real pointer exists and motion is allowed, so no-JS and
+              touch visitors get a correct static frame and download no video. */}
+          <img
+            id="motion-band-poster"
+            src={m.poster}
+            alt={m.alt}
+            width="440"
+            height="440"
+            loading="lazy"
+            decoding="async"
+            class="block h-auto w-full"
+          />
+        </div>
+
+          <div class="hidden h-28 pb-1 sm:block sm:h-32">
+            <MotionScenery side="right" />
+          </div>
+        </div>
+
+        {/* Caption. The full text is server-rendered so it survives with no JS
+            and is indexable; the visible copy is aria-hidden and typed out,
+            while an sr-only copy gives assistive tech the whole sentence at
+            once instead of one character at a time. */}
+        <p class="mb-4 mt-1 px-2 text-center text-xs text-[#7A6A57] sm:text-sm">
+          <span class="sr-only">{m.caption}</span>
+          <span id="motion-caption" aria-hidden="true" data-text={m.caption}>{m.caption}</span
+          ><span id="motion-caret" class="motion-caret" aria-hidden="true"></span>
+        </p>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  const root = document.getElementById('motion-band');
+  const poster = document.getElementById('motion-band-poster') as HTMLImageElement | null;
+
+  if (root && poster) {
+    const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+
+    const start = async () => {
+      if (!finePointer.matches || reduced.matches) return;
+
+      // The compiled timeline is the single source of truth for fps and frame
+      // count; nothing here restates them.
+      let timeline: { frameCount: number; frameDuration: number };
+      try {
+        const res = await fetch(root.dataset.timeline!);
+        if (!res.ok) throw new Error(String(res.status));
+        timeline = await res.json();
+      } catch {
+        return; // keep the static poster
+      }
+      if (!timeline?.frameCount || !timeline?.frameDuration) return;
+
+      const breakpoint = Number(root.dataset.breakpoint ?? 640);
+      const src = innerWidth >= breakpoint ? root.dataset.desktop! : root.dataset.mobile!;
+
+      const video = document.createElement('video');
+      video.src = src;
+      video.muted = true;
+      video.playsInline = true;
+      video.preload = 'auto';
+      video.setAttribute('aria-hidden', 'true');
+      video.className = 'block h-auto w-full';
+
+      // Only swap once the video can actually be seeked, otherwise the band
+      // would flash empty.
+      await new Promise<void>((resolve, reject) => {
+        video.addEventListener('loadeddata', () => resolve(), { once: true });
+        video.addEventListener('error', () => reject(new Error('load')), { once: true });
+      }).catch(() => {});
+      if (!video.videoWidth) return;
+
+      const { createFrameAnimator } = await import('../lib/interactive-motion.ts');
+      const animator = createFrameAnimator({
+        frameCount: timeline.frameCount,
+        initialFrame: Math.floor(timeline.frameCount / 2), // rest state
+        render: (frame) => {
+          video.currentTime = frame * timeline.frameDuration;
+        },
+      });
+
+      poster.replaceWith(video);
+
+      // 1-D mapping from runtime.md: pointer X across the viewport drives the
+      // whole timeline, so the dog tracks the cursor anywhere on the page.
+      addEventListener(
+        'pointermove',
+        (event) => {
+          if (event.pointerType !== 'mouse') return;
+          animator.setProgress(event.clientX / innerWidth);
+        },
+        { passive: true }
+      );
+
+      // Settle back to the near-frontal rest frame when the cursor leaves.
+      addEventListener('pointerleave', () => animator.setProgress(0.5), { passive: true });
+    };
+
+    start();
+  }
+</script>
+
+<style>
+  /* Blinking caret for the typed caption. Hidden entirely once typing is done
+     and for visitors who asked for reduced motion. */
+  .motion-caret {
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    margin-left: 2px;
+    vertical-align: -0.15em;
+    background-color: #9C8B76;
+    animation: motion-caret-blink 1.05s step-end infinite;
+  }
+
+  .motion-caret[hidden] {
+    display: none;
+  }
+
+  @keyframes motion-caret-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motion-caret {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // Typewriter for the band caption.
+  //
+  // Server-rendered full text is cleared and retyped only when JS runs, so the
+  // no-JS path keeps a complete, indexable sentence. Typing starts when the band
+  // scrolls into view — kicking it off at load meant it finished off-screen and
+  // nobody ever saw it.
+  const caption = document.getElementById('motion-caption');
+  const caret = document.getElementById('motion-caret');
+  const text = caption?.dataset.text ?? '';
+
+  if (caption && text) {
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+
+    if (reduced.matches) {
+      caret?.setAttribute('hidden', '');
+    } else {
+      let started = false;
+
+      const type = () => {
+        // Cleared here rather than up front: an emptied inline span collapses to
+        // zero area, and observing a zero-area element for intersection is
+        // unreliable.
+        caption.textContent = '';
+        let i = 0;
+        const step = () => {
+          caption.textContent = text.slice(0, ++i);
+          if (i < text.length) {
+            // Slight jitter, plus a longer beat after sentence punctuation.
+            const punctuation = /[.,]/.test(text[i - 1] ?? '');
+            setTimeout(step, (punctuation ? 220 : 26) + Math.random() * 26);
+          } else {
+            // Let the caret blink a few times, then retire it.
+            setTimeout(() => caret?.setAttribute('hidden', ''), 2200);
+          }
+        };
+        step();
+      };
+
+      const begin = () => {
+        if (started) return;
+        started = true;
+        type();
+      };
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              io.disconnect();
+              begin();
+            }
+          },
+          { rootMargin: '0px 0px -15% 0px' }
+        );
+        // Observe the paragraph, not the span being typed: the span is emptied
+        // on start and would collapse to zero size.
+        io.observe(caption.parentElement ?? caption);
+      } else {
+        begin();
+      }
+    }
+  }
+</script>

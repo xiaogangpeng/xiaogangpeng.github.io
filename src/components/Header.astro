@@ -1,0 +1,61 @@
+---
+import { profile, sections } from '../data/profile.ts';
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<header
+  class="sticky top-0 z-50 border-b border-line bg-surface/85 backdrop-blur-md"
+>
+  <div class="mx-auto flex h-13 max-w-6xl items-center gap-6 px-6 py-3">
+    <a
+      href="#top"
+      class="shrink-0 text-sm font-semibold tracking-tight text-ink no-underline hover:no-underline"
+    >
+      {profile.name}
+    </a>
+
+    <nav class="hidden flex-1 justify-end items-center gap-6 sm:flex" aria-label="Sections">
+      {
+        sections.map((section) => (
+          <a
+            href={`#${section.id}`}
+            data-nav={section.id}
+            class="border-b-2 border-transparent pb-0.5 text-sm text-ink-faint no-underline hover:text-ink hover:no-underline"
+          >
+            {section.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="ml-auto sm:ml-2">
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
+
+<script>
+  // Underline the nav item for whichever section currently owns the viewport.
+  const links = new Map<string, HTMLElement>();
+  document.querySelectorAll<HTMLElement>('[data-nav]').forEach((el) => {
+    links.set(el.dataset.nav!, el);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const link = links.get(entry.target.id);
+        if (!link) continue;
+        link.classList.toggle('border-ink', entry.isIntersecting);
+        link.classList.toggle('text-ink', entry.isIntersecting);
+      }
+    },
+    // Only the band crossing the upper third counts as current.
+    { rootMargin: '-15% 0px -70% 0px' }
+  );
+
+  links.forEach((_, id) => {
+    const section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+</script>

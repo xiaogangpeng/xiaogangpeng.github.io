@@ -1,0 +1,285 @@
+{
+  "source": "/Users/ericpeng/Desktop/Code_Repos/xiaogangpeng.github.io/motion/dogs-pointer/final/frame-preparation/frames",
+  "output": "/Users/ericpeng/Desktop/Code_Repos/xiaogangpeng.github.io/motion/dogs-pointer/final/frames/final",
+  "inputFrameCount": 124,
+  "outputFrameCount": 84,
+  "seamWindow": 40,
+  "endReference": "/Users/ericpeng/Desktop/Code_Repos/xiaogangpeng.github.io/motion/dogs-pointer/source/last-frame.png",
+  "seamSourceIndex": 119,
+  "seamDifference": 0.00920945,
+  "duplicateThreshold": 0.003,
+  "keptSourceIndices": [
+    0,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    98,
+    100,
+    102,
+    104,
+    114,
+    119
+  ],
+  "droppedNearDuplicates": [
+    {
+      "index": 1,
+      "file": "frame_00002.png",
+      "difference": 0.00098526
+    },
+    {
+      "index": 2,
+      "file": "frame_00003.png",
+      "difference": 0.00100082
+    },
+    {
+      "index": 3,
+      "file": "frame_00004.png",
+      "difference": 0.00100712
+    },
+    {
+      "index": 4,
+      "file": "frame_00005.png",
+      "difference": 0.00101645
+    },
+    {
+      "index": 5,
+      "file": "frame_00006.png",
+      "difference": 0.00111427
+    },
+    {
+      "index": 6,
+      "file": "frame_00007.png",
+      "difference": 0.0011386
+    },
+    {
+      "index": 7,
+      "file": "frame_00008.png",
+      "difference": 0.00114985
+    },
+    {
+      "index": 8,
+      "file": "frame_00009.png",
+      "difference": 0.00116023
+    },
+    {
+      "index": 9,
+      "file": "frame_00010.png",
+      "difference": 0.001231
+    },
+    {
+      "index": 10,
+      "file": "frame_00011.png",
+      "difference": 0.00124895
+    },
+    {
+      "index": 11,
+      "file": "frame_00012.png",
+      "difference": 0.00124687
+    },
+    {
+      "index": 12,
+      "file": "frame_00013.png",
+      "difference": 0.00125629
+    },
+    {
+      "index": 13,
+      "file": "frame_00014.png",
+      "difference": 0.00127248
+    },
+    {
+      "index": 14,
+      "file": "frame_00015.png",
+      "difference": 0.00128278
+    },
+    {
+      "index": 15,
+      "file": "frame_00016.png",
+      "difference": 0.0012795
+    },
+    {
+      "index": 16,
+      "file": "frame_00017.png",
+      "difference": 0.001304
+    },
+    {
+      "index": 17,
+      "file": "frame_00018.png",
+      "difference": 0.00127903
+    },
+    {
+      "index": 18,
+      "file": "frame_00019.png",
+      "difference": 0.00150162
+    },
+    {
+      "index": 19,
+      "file": "frame_00020.png",
+      "difference": 0.00174983
+    },
+    {
+      "index": 97,
+      "file": "frame_00098.png",
+      "difference": 0.00235117
+    },
+    {
+      "index": 99,
+      "file": "frame_00100.png",
+      "difference": 0.001289
+    },
+    {
+      "index": 101,
+      "file": "frame_00102.png",
+      "difference": 0.00264135
+    },
+    {
+      "index": 103,
+      "file": "frame_00104.png",
+      "difference": 0.0018226
+    },
+    {
+      "index": 105,
+      "file": "frame_00106.png",
+      "difference": 0.00156434
+    },
+    {
+      "index": 106,
+      "file": "frame_00107.png",
+      "difference": 0.00212777
+    },
+    {
+      "index": 107,
+      "file": "frame_00108.png",
+      "difference": 0.00230545
+    },
+    {
+      "index": 108,
+      "file": "frame_00109.png",
+      "difference": 0.00215338
+    },
+    {
+      "index": 109,
+      "file": "frame_00110.png",
+      "difference": 0.00198073
+    },
+    {
+      "index": 110,
+      "file": "frame_00111.png",
+      "difference": 0.00232899
+    },
+    {
+      "index": 111,
+      "file": "frame_00112.png",
+      "difference": 0.00278336
+    },
+    {
+      "index": 112,
+      "file": "frame_00113.png",
+      "difference": 0.00291269
+    },
+    {
+      "index": 113,
+      "file": "frame_00114.png",
+      "difference": 0.00297907
+    },
+    {
+      "index": 115,
+      "file": "frame_00116.png",
+      "difference": 0.00026911
+    },
+    {
+      "index": 116,
+      "file": "frame_00117.png",
+      "difference": 0.00030749
+    },
+    {
+      "index": 117,
+      "file": "frame_00118.png",
+      "difference": 0.000341
+    },
+    {
+      "index": 118,
+      "file": "frame_00119.png",
+      "difference": 0.00035089
+    }
+  ],
+  "trimmedTailSourceIndices": [
+    120,
+    121,
+    122,
+    123
+  ]
+}

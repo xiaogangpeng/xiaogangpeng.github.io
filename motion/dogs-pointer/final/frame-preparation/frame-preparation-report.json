@@ -1,0 +1,11 @@
+{
+  "type": "motion-frame-preparation-report",
+  "policy": "native",
+  "sourceFps": 24.0,
+  "targetFps": 24.0,
+  "analysis": "/Users/ericpeng/Desktop/Code_Repos/xiaogangpeng.github.io/motion/dogs-pointer/final/frame-preparation/qa/analysis-native.json",
+  "verdict": {
+    "passedAutomaticChecks": true,
+    "manualReviewRequired": true
+  }
+}

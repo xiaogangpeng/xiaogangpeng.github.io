@@ -1,0 +1,84 @@
+---
+import { LAND_PATH, MAP, places, projectLat, projectLon } from '../data/worldmap.ts';
+
+const points = places.map((p) => ({
+  ...p,
+  x: projectLon(p.lon),
+  y: projectLat(p.lat),
+}));
+
+const countries = new Set(places.map((p) => p.country)).size;
+---
+
+<div class="mx-auto max-w-3xl">
+  <svg
+    class="block h-auto w-full"
+    viewBox={`0 0 ${MAP.width} ${MAP.height}`}
+    role="img"
+    aria-label={`World map marking ${places.length} places visited`}
+  >
+    <!-- Land. Muted on purpose so the markers carry the attention. -->
+    <path d={LAND_PATH} class="fill-map-land stroke-map-edge" stroke-width="0.5" />
+
+    {
+      points.map((p) => (
+        <g class="map-pin">
+          <title>{p.city}, {p.country}</title>
+          {/* Only the home marker gets a halo. The Yangtze Delta cities sit 1-2°
+              apart — about 4px at the rendered width — so halos on every pin
+              merged the whole cluster into one blob. A surface-coloured stroke
+              keeps touching dots readable instead. */}
+          {p.home && <circle cx={p.x} cy={p.y} r="14" class="fill-accent/20" />}
+          <circle
+            cx={p.x}
+            cy={p.y}
+            r={p.home ? 5.5 : 4}
+            class="fill-accent stroke-surface"
+            stroke-width="1.6"
+          />
+        </g>
+      ))
+    }
+  </svg>
+
+  <ul class="mt-5 flex flex-wrap justify-center gap-x-4 gap-y-1.5 text-xs text-ink-faint">
+    {
+      places.map((p) => (
+        <li>
+          <span class={p.home ? 'font-semibold text-ink' : 'text-ink-soft'}>{p.city}</span>
+          {', '}
+          {p.country}
+        </li>
+      ))
+    }
+  </ul>
+
+  <p class="mt-3 text-center text-xs text-ink-faint">
+    {places.length} {places.length === 1 ? 'place' : 'places'} · {countries}{' '}
+    {countries === 1 ? 'country' : 'countries'}
+  </p>
+</div>
+
+<style>
+  /* The home marker gets a slow pulse; everything else stays still so the map
+     does not read as busy. Disabled under reduced motion. */
+  @media (prefers-reduced-motion: no-preference) {
+    .map-pin:first-of-type circle:first-of-type {
+      animation: map-pulse 3.2s ease-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+
+  @keyframes map-pulse {
+    0% {
+      opacity: 0.55;
+      transform: scale(0.7);
+    }
+    70%,
+    100% {
+      opacity: 0;
+      transform: scale(1.9);
+    }
+  }
+</style>

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "fps": 24.0,
+  "frameDuration": 0.041666666666666664,
+  "frameCount": 84,
+  "initialState": "state-0",
+  "states": [
+    {
+      "id": "state-0",
+      "frame": 0,
+      "hold": 0.0
+    },
+    {
+      "id": "state-1",
+      "frame": 83,
+      "hold": 3.4583333333333335
+    }
+  ],
+  "segments": [
+    {
+      "id": "state-0->state-1",
+      "from": "state-0",
+      "to": "state-1",
+      "sourceFrames": {
+        "start": 0,
+        "hold": 123,
+        "endExclusive": 124
+      },
+      "frames": {
+        "start": 0,
+        "hold": 83,
+        "endExclusive": 84
+      },
+      "start": 0.0,
+      "hold": 3.4583333333333335,
+      "endExclusive": 3.5,
+      "curve": {
+        "type": "constant",
+        "rate": 1.0
+      }
+    }
+  ]
+}

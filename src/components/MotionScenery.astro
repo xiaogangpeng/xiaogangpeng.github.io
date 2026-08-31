@@ -1,0 +1,137 @@
+---
+/**
+ * Static scenery flanking the motion band's dog.
+ *
+ * Two constraints shape this:
+ *
+ * 1. The compiled video is an OPAQUE #FAFAFA rectangle (background_owner=video
+ *    bakes the backdrop in), so nothing can sit behind it — scenery lives beside
+ *    the tile only.
+ * 2. No continuous ground line: the tile masks its full width while the dog
+ *    fills just 52–66% of that, which left visible breaks. Every element instead
+ *    shares one baseline (y=112, matching the dog's measured paw line at 89.5%
+ *    of tile height) and carries its own contact shadow.
+ *
+ * Sized by HEIGHT, not width — with `w-full` the flex track stretched the
+ * viewBox and the artwork ballooned past the band. The viewBox is wide (460x120)
+ * so that at band height the artwork spans enough width to fill the band, with
+ * density falling off toward the page edges. The two sides carry different props
+ * rather than a mirrored copy, which read as wallpaper.
+ */
+interface Props {
+  side: 'left' | 'right';
+}
+const { side } = Astro.props;
+
+// Muted on purpose: scenery should sit behind the dog in visual weight.
+const ink = '#5C4632';
+const pot = '#C6A480';
+const potRim = '#8A6A4C';
+const leaf = '#93A277';
+const stem = '#6E7C55';
+const shadow = '#E8E4DC';
+const boneFill = '#F2ECE0';
+const ball = '#D8A66E';
+---
+
+<svg
+  class="block h-full w-auto select-none"
+  viewBox="0 0 460 120"
+  fill="none"
+  aria-hidden="true"
+  preserveAspectRatio={side === 'left' ? 'xMaxYMax meet' : 'xMinYMax meet'}
+>
+  {
+    side === 'left' ? (
+      <>
+        {/* Contact shadows, all on the shared baseline */}
+        <ellipse cx="392" cy="112" rx="19" ry="2.6" fill={shadow} />
+        <ellipse cx="330" cy="113" rx="11" ry="2.2" fill={shadow} />
+        <ellipse cx="268" cy="112" rx="9" ry="2.1" fill={shadow} />
+        <ellipse cx="196" cy="112" rx="12" ry="2.2" fill={shadow} />
+
+        {/* Paw prints trailing in toward the dog */}
+        <g fill={shadow}>
+          <circle cx="424" cy="110" r="1.5" />
+          <circle cx="433" cy="106.5" r="1.8" />
+          <circle cx="443" cy="110" r="2.1" />
+        </g>
+
+        {/* Potted plant */}
+        <g stroke={ink} stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M381 112h22l-2.7-16h-16.6z" fill={pot} />
+          <path d="M379.8 92.5h24.4V96h-24.4z" fill={potRim} />
+          <path d="M392 92.5V74" stroke={stem} />
+          <path d="M392 82c-6-1.2-9.8-5.4-9.8-10.6 5.7-.4 9.4 3.4 9.8 10.6z" fill={leaf} />
+          <path d="M392 77.4c5.3-1.5 8.7-6 8.3-11.3-5.3.4-8.3 4.2-8.3 11.3z" fill={leaf} />
+        </g>
+
+        {/* Bone */}
+        <g stroke={ink} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M321 108c-2-2-2-4.9 0-6.4 1.5-1.5 4.1-1.4 5.6.5l7.3-.2c1.5-1.8 4.1-2 5.6-.5 2 1.5 2 4.4 0 6.4-1.5 1.5-4.1 1.4-5.6-.5l-7.3.2c-1.5 1.8-4.1 2-5.6.5z"
+            fill={boneFill}
+          />
+        </g>
+
+        {/* Grass tuft */}
+        <g stroke={stem} stroke-width="1.6" stroke-linecap="round">
+          <path d="M262 112c-.8-5.4.8-9.2 3-12.2" />
+          <path d="M269 112c0-6.8 1.9-11.4 4.6-14.4" />
+          <path d="M276 112c.8-4.6 2.7-7.6 5.3-9.9" />
+        </g>
+
+        {/* Twig on the ground, farthest out. A rounded leaf shape was tried here
+            first and read as a green blob at band scale. */}
+        <g stroke={stem} stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M184 111l24-3" />
+          <path d="M196 109.5l-4-5M203 108.7l3-4.6" />
+        </g>
+      </>
+    ) : (
+      <>
+        <ellipse cx="34" cy="112" rx="9" ry="2.2" fill={shadow} />
+        <ellipse cx="96" cy="112" rx="13" ry="2.4" fill={shadow} />
+        <ellipse cx="250" cy="112" rx="17" ry="2.5" fill={shadow} />
+
+        {/* Paw prints trailing away from the dog */}
+        <g fill={shadow}>
+          <circle cx="12" cy="110" r="2.1" />
+        </g>
+
+        {/* Ball */}
+        <g stroke={ink} stroke-width="1.5" stroke-linejoin="round">
+          <circle cx="34" cy="104.5" r="7.5" fill={ball} />
+          <path d="M27.2 101.4c4.6 1.6 9.4 1.4 13.8-.6" stroke-linecap="round" />
+        </g>
+
+        {/* Grass tufts */}
+        <g stroke={stem} stroke-width="1.6" stroke-linecap="round">
+          <path d="M88 112c-.8-5.4.8-9.2 3-12.2" />
+          <path d="M95 112c0-6.8 1.9-11.4 4.6-14.4" />
+          <path d="M102 112c.8-4.6 2.7-7.6 5.3-9.9" />
+        </g>
+
+        {/* One floating leaf, drifting above the baseline, so the upper half of
+            the band is not empty. A butterfly was tried here first: at ~20px the
+            two wings merged into a single blob. */}
+        <g stroke={ink} stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M158 88c-4-10 1-19 12-21.5-1 11.5-5 18.5-12 21.5z"
+            fill={leaf}
+            transform="rotate(-18 164 78)"
+          />
+          <path d="M159.5 86.5c1.5-6.5 4.5-12 9-16" stroke={stem} transform="rotate(-18 164 78)" />
+        </g>
+
+        {/* Small shrub, farthest out */}
+        <g stroke={ink} stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M250 112V92" stroke={stem} />
+          <path d="M250 100c-8-1.6-13-7.2-13-14.2 7.6-.6 12.6 4.6 13 14.2z" fill={leaf} />
+          <path d="M250 95c7-2 11.6-8 11.2-15-7 .6-11.2 5.6-11.2 15z" fill={leaf} />
+          <path d="M250 89c-5.4-3-7.8-8.4-6.4-14.2 5.4 1.4 7.8 6.4 6.4 14.2z" fill={leaf} />
+        </g>
+      </>
+    )
+  }
+</svg>

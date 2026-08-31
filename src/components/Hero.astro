@@ -1,0 +1,77 @@
+---
+import { profile } from '../data/profile.ts';
+import HeroPortrait from './HeroPortrait.astro';
+import SocialTile from './SocialTile.astro';
+import ScholarBadge from './ScholarBadge.astro';
+
+const { heroBackground, tagline } = profile;
+---
+
+<div class="relative isolate overflow-hidden">
+  {/* Optional photo backdrop; a soft wash stands in when none is configured. */}
+  {
+    heroBackground ? (
+      <>
+        <img
+          src={heroBackground}
+          alt=""
+          class="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div class="absolute inset-0 -z-10 bg-surface/80 backdrop-blur-[2px]"></div>
+      </>
+    ) : (
+      <div class="hero-wash absolute inset-0 -z-10"></div>
+    )
+  }
+
+  <div class="mx-auto max-w-6xl px-6 pt-12 pb-14 sm:pt-16 sm:pb-16">
+    <div class="grid gap-10 sm:grid-cols-[1fr_17rem] sm:gap-12 lg:grid-cols-[1fr_19rem]">
+      <div class="order-2 sm:order-1">
+        <h1
+          class="text-[2.25rem] font-semibold leading-[1.05] tracking-tight text-ink sm:text-[3rem]"
+        >
+          {profile.name}
+          {
+            profile.altName && (
+              <span class="ml-2 align-middle text-2xl font-normal text-ink-faint sm:text-3xl">
+                ({profile.altName})
+              </span>
+            )
+          }
+        </h1>
+
+        <dl class="mt-6 flex flex-wrap gap-x-10 gap-y-4">
+          {
+            profile.roles.map((role) => (
+              <div>
+                <dt class="label">{role.label}</dt>
+                <dd class="mt-0.5 text-sm text-ink">
+                  {role.href ? <a href={role.href}>{role.value}</a> : role.value}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+
+        <p class="mt-8 text-xl leading-snug tracking-tight text-ink-soft sm:text-2xl">
+          {tagline.before}<strong class="font-semibold text-ink">{tagline.emphasis}</strong
+          >{tagline.after}
+        </p>
+
+        <div class="mt-6 max-w-2xl space-y-3 text-[0.9375rem] leading-7">
+          {profile.bioHtml.map((paragraph) => <p set:html={paragraph} />)}
+        </div>
+
+        <div class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          {profile.socials.map((social) => <SocialTile social={social} />)}
+          <ScholarBadge />
+        </div>
+      </div>
+
+      {/* Capped on small screens so the name stays above the fold. */}
+      <div class="order-1 w-40 sm:order-2 sm:w-auto">
+        <HeroPortrait />
+      </div>
+    </div>
+  </div>
+</div>

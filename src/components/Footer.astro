@@ -1,0 +1,16 @@
+---
+import { profile } from '../data/profile.ts';
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-line bg-surface">
+  <div
+    class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-8 text-xs text-ink-faint sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p>© {year} {profile.name}</p>
+    <p>
+      Built with <a href="https://astro.build">Astro</a> &amp;{' '}
+      <a href="https://tailwindcss.com">Tailwind CSS</a>
+    </p>
+  </div>
+</footer>
