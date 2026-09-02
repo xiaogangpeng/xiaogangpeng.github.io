@@ -39,7 +39,7 @@ export const publications: Publication[] = [
     ],
     venue: 'SIGGRAPH Asia',
     year: 2026,
-    image: '/images/projects/SK-HOI_teaser.jpg',
+    image: '/images/projects/SK-HOI_teaser.gif',
     starsRepo: 'neu-vi/SK-HOI',
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2608.03158' },

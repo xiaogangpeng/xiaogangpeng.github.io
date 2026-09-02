@@ -16,7 +16,7 @@ export const news: NewsItem[] = [
 
   {
     date: '2026.08',
-    html: 'Our paper <a href="https://github.com/neu-vi/SK-HOI">SK-HOI</a> is accepted by <strong>SIGGRAPH 2026 Asia</strong>.',
+    html: 'Our paper <a href="https://github.com/neu-vi/SK-HOI">SK-HOI</a> is conditionally accepted by <strong>SIGGRAPH 2026 Asia</strong>.',
     highlight: true,
   },
   
