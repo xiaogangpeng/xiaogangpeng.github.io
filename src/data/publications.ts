@@ -25,6 +25,32 @@ export interface Publication {
 /* Author lists preserve the exact ordering and equal-contribution marks
    from the previous site. */
 export const publications: Publication[] = [
+
+
+    {
+    title: 'MESSI: Multi-Expert Soccer Skill Integration for Physics-Based Character Control',
+    short: 'MESSI',
+    authors: [
+      { name: 'Xiaogang Peng', me: true },
+      { name: 'Jiaqi Zou', equal: true },
+      { name: 'Lei Zhong' },
+      { name: 'Sirui Xu' },
+      { name: 'Huaizu Jiang' },
+      { name: 'Gang Hua' },
+      { name: 'Huaizu Jiang' },
+    ],
+    venue: 'preprint',
+    year: 2026,
+    image: '/images/projects/MESSI_teaser.gif',
+    // starsRepo: 'neu-3dvi/MESSI',
+    links: [
+      { label: 'arXiv (comming soon)', href: 'https://arxiv.org/' },
+      { label: 'Code  (comming soon)', href: 'https://github.com/' },
+      { label: 'Website', href: 'https://neu-3dvi.github.io/MESSI/' },
+    ],
+  },
+
+
   {
     title: 'Surface Keypoint Representation for Multi-Object and Articulated Human-Object Interaction Generation',
     short: 'SK-HOI',
@@ -40,11 +66,11 @@ export const publications: Publication[] = [
     venue: 'SIGGRAPH Asia',
     year: 2026,
     image: '/images/projects/SK-HOI_teaser.gif',
-    starsRepo: 'neu-vi/SK-HOI',
+    starsRepo: 'neu-3dvi/SK-HOI',
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2608.03158' },
-      { label: 'Code', href: 'https://github.com/neu-vi/SK-HOI' },
-      { label: 'Project', href: 'https://neu-vi.github.io/SK-HOI/' },
+      { label: 'Code', href: 'https://github.com/neu-3dvi/SK-HOI' },
+      { label: 'Website', href: 'https://neu-3dvi.github.io/SK-HOI/' },
     ],
   },
 
@@ -62,11 +88,11 @@ export const publications: Publication[] = [
     venue: 'CVPR',
     year: 2025,
     image: '/images/projects/MARDM_teaser.gif',
-    starsRepo: 'neu-vi/MARDM',
+    starsRepo: 'neu-3dvi/MARDM',
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2411.16575' },
-      { label: 'Code', href: 'https://github.com/neu-vi/MARDM' },
-      { label: 'Project', href: 'https://neu-vi.github.io/MARDM/' },
+      { label: 'Code', href: 'https://github.com/neu-3dvi/MARDM' },
+      { label: 'Website', href: 'https://neu-3dvi.github.io/MARDM/' },
     ],
   },
   {
@@ -84,13 +110,13 @@ export const publications: Publication[] = [
     venue: 'CVPRW',
     year: 2025,
     image: '/images/projects/HOI-Diff_teaser.gif',
-    starsRepo: 'neu-vi/HOI-Diff',
+    starsRepo: 'neu-3dvi/HOI-Diff',
     links: [
       /* The old badge was labelled arXiv:2403.07487 but linked to 2312.06553.
          2312.06553 is the real HOI-Diff preprint, so the label is corrected. */
       { label: 'arXiv', href: 'https://arxiv.org/abs/2312.06553' },
-      { label: 'Code', href: 'https://github.com/neu-vi/HOI-Diff' },
-      { label: 'Project', href: 'https://neu-vi.github.io/HOI-Diff/' },
+      { label: 'Code', href: 'https://github.com/neu-3dvi/HOI-Diff' },
+      { label: 'Website', href: 'https://neu-3dvi.github.io/HOI-Diff/' },
     ],
   },
   {
@@ -111,7 +137,7 @@ export const publications: Publication[] = [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2303.05095' },
       { label: 'Code', href: 'https://github.com/xiaogangpeng/TBIFormer' },
       {
-        label: 'Project',
+        label: 'Website',
         href: 'https://xiaogangpeng.github.io/projects/tbiformer/page.html',
       },
     ],
